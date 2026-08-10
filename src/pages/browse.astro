@@ -2,6 +2,7 @@
 import AppLayout from '../layouts/AppLayout.astro';
 import medicines from '../data/medicines.json';
 import { distinctBrands } from '../lib/format.mjs';
+import { withBase } from '../lib/url.mjs';
 
 const sorted = [...medicines].sort((a, b) => a.genericName.localeCompare(b.genericName));
 
@@ -40,7 +41,7 @@ const letters = [...groups.keys()];
 							const brands = distinctBrands(m.genericName, m.brandNames);
 							return (
 								<li>
-									<a href={`/medicine/${m.slug}/`}>
+									<a href={withBase(`/medicine/${m.slug}/`)}>
 										{m.genericName}
 										<span class="sub">{m.purpose || brands.slice(0, 2).join(', ') || 'OTC medicine'}</span>
 									</a>

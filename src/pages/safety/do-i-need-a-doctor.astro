@@ -2,6 +2,7 @@
 import AppLayout from '../../layouts/AppLayout.astro';
 import FaqItem from '../../components/FaqItem.astro';
 import { RED_FLAGS } from '../../data/red-flags.mjs';
+import { withBase } from '../../lib/url.mjs';
 
 const urgent = RED_FLAGS.filter((f) => f.tier === 'urgent');
 
@@ -23,7 +24,7 @@ const faqSchema = {
 >
 	<div class="wrap detail">
 		<nav class="crumbs" aria-label="Breadcrumb">
-			<a href="/">Home</a> &rsaquo; <a href="/safety">Safety FAQ</a> &rsaquo; <span
+			<a href={withBase('/')}>Home</a> &rsaquo; <a href={withBase('/safety')}>Safety FAQ</a> &rsaquo; <span
 				>Do I need a doctor for this?</span
 			>
 		</nav>
@@ -39,7 +40,7 @@ const faqSchema = {
 		</div>
 
 		<p style="margin-top:2.5rem">
-			<a href="/safety">&larr; Back to Safety FAQ</a>
+			<a href={withBase('/safety')}>&larr; Back to Safety FAQ</a>
 		</p>
 	</div>
 

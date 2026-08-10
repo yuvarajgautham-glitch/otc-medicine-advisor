@@ -59,7 +59,10 @@ export const hasActiveFilters = (f) =>
  * dropped rather than assumed safe — "the label doesn't say" is not the same
  * as "it's fine for a toddler".
  */
-export function filterIndex(index, filters = EMPTY_FILTERS) {
+export function filterIndex(index, activeFilters) {
+	// Not a default parameter: TypeScript would infer the empty shape's literal
+	// types ({age: null}) and then reject a real selection.
+	const filters = activeFilters ?? EMPTY_FILTERS;
 	if (!hasActiveFilters(filters)) return index;
 
 	const band = filters.age ? AGE_BANDS.find((b) => b.id === filters.age) : null;

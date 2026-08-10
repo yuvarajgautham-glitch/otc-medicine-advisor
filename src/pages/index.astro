@@ -178,6 +178,7 @@ const medCount = medicines.length;
 
 <script>
 	import { matchRedFlags, RED_FLAGS } from '../data/red-flags.mjs';
+	import { withBase } from '../lib/url.mjs';
 	import {
 		matchSymptoms,
 		rankMedicines,
@@ -213,7 +214,7 @@ const medCount = medicines.length;
 
 	function loadIndex() {
 		if (!indexPromise) {
-			indexPromise = fetch('/search-index.json')
+			indexPromise = fetch(withBase('/search-index.json'))
 				.then((r) => r.json())
 				.then((data) => (index = data));
 		}
@@ -251,7 +252,7 @@ const medCount = medicines.length;
 		return `<ul class="card-list">${ranked
 			.map(({ entry }) => {
 				const brands = (entry.b ?? []).filter((b: string) => b.toLowerCase() !== entry.n.toLowerCase());
-				return `<li><a class="med-card" href="/medicine/${entry.s}/">
+				return `<li><a class="med-card" href="${withBase(`/medicine/${entry.s}/`)}">
 					${entry.p ? `<span class="purpose">${escapeHtml(entry.p)}</span>` : ''}
 					<h3>${escapeHtml(entry.n)}</h3>
 					${brands.length ? `<p class="brands">Sold as ${escapeHtml(brands.slice(0, 3).join(', '))}</p>` : ''}
@@ -335,7 +336,7 @@ const medCount = medicines.length;
 					<p style="margin:0">${
 						hasActiveFilters(filters)
 							? 'Try removing a filter — an age filter in particular hides anything whose label doesn\'t state a minimum age.'
-							: 'Try describing the symptom more plainly — "sore throat", "stuffy nose", "can\'t sleep" — or <a href="/browse">browse the medicine catalog</a>. If you\'re not sure what\'s wrong, a pharmacist is the right person to ask.'
+							: `Try describing the symptom more plainly — "sore throat", "stuffy nose", "can't sleep" — or <a href="${withBase('/browse')}">browse the medicine catalog</a>. If you're not sure what's wrong, a pharmacist is the right person to ask.`
 					}</p>
 				</div>`;
 

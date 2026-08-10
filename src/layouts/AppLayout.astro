@@ -1,5 +1,6 @@
 ---
 import '../styles/app.css';
+import { withBase } from '../lib/url.mjs';
 
 interface Props {
 	title: string;
@@ -30,14 +31,14 @@ const year = new Date().getFullYear();
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>{title}</title>
 		<meta name="description" content={description} />
-		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+		<link rel="icon" href={withBase('/favicon.svg')} type="image/svg+xml" />
 	</head>
 	<body>
 		<a class="skip-link" href="#main">Skip to content</a>
 
 		<header class="site-header">
 			<div class="wrap">
-				<a class="brand" href="/">
+				<a class="brand" href={withBase('/')}>
 					<svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
 						<rect
 							x="2.5"
@@ -54,7 +55,7 @@ const year = new Date().getFullYear();
 				<nav class="site-nav" aria-label="Main">
 					{
 						nav.map((item) => (
-							<a href={item.href} aria-current={current === item.id ? 'page' : undefined}>
+							<a href={withBase(item.href)} aria-current={current === item.id ? 'page' : undefined}>
 								{item.label}
 							</a>
 						))
@@ -77,9 +78,9 @@ const year = new Date().getFullYear();
 					worse, contact a doctor or call 911.
 				</p>
 				<nav class="footer-links" aria-label="Footer">
-					<a href="/safety">Safety FAQ — when to see a doctor</a>
-					<a href="/about">Where this data comes from</a>
-					<a href="/contact">Contact us</a>
+					<a href={withBase('/safety')}>Safety FAQ — when to see a doctor</a>
+					<a href={withBase('/about')}>Where this data comes from</a>
+					<a href={withBase('/contact')}>Contact us</a>
 					<a href="https://open.fda.gov/apis/drug/label/" rel="noopener">openFDA drug labels</a>
 				</nav>
 				<p style="margin-top:1.25rem">

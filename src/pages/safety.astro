@@ -2,6 +2,7 @@
 import AppLayout from '../layouts/AppLayout.astro';
 import { GENERAL_FAQ } from '../data/faq.mjs';
 import { RED_FLAGS } from '../data/red-flags.mjs';
+import { withBase } from '../lib/url.mjs';
 
 const sections = [
 	{
@@ -63,7 +64,7 @@ const sections = [
 				{
 					sections.map((section) => (
 						<li>
-							<a class="subbox" href={section.href}>
+							<a class="subbox" href={withBase(section.href)}>
 								<span class="subbox-icon" aria-hidden="true">
 									{section.icon}
 								</span>
@@ -80,7 +81,7 @@ const sections = [
 		</section>
 
 		<p style="margin-top:2.5rem">
-			<a href="/">&larr; Back to search</a>
+			<a href={withBase('/')}>&larr; Back to search</a>
 		</p>
 	</div>
 </AppLayout>

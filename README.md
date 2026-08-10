@@ -10,8 +10,20 @@ so nothing anyone types is ever sent to a server.
 
 ```bash
 npm install
-npm run dev      # http://localhost:4321
+npm run dev      # http://localhost:4322/otc-medicine-advisor
 ```
+
+The URL carries the repo name because the site is published to GitHub Pages, which serves a
+project from a subfolder. `base` in `astro.config.mjs` sets it, and the dev server mirrors it so
+local and live behave identically. **Rename the repo and you must change `REPO` in
+`astro.config.mjs` to match**, or every published link will 404.
+
+## Deploying
+
+`.github/workflows/deploy.yml` builds and publishes to GitHub Pages on every push to `main`.
+Because the monthly data refresh commits to `main`, a refresh reaches the live site on its own.
+
+Enable it once: **repo → Settings → Pages → Source → GitHub Actions**.
 
 | Command | What it does |
 | --- | --- |

@@ -2,6 +2,7 @@
 import AppLayout from '../../layouts/AppLayout.astro';
 import FaqItem from '../../components/FaqItem.astro';
 import { GENERAL_FAQ } from '../../data/faq.mjs';
+import { withBase } from '../../lib/url.mjs';
 
 const faqSchema = {
 	'@context': 'https://schema.org',
@@ -21,7 +22,8 @@ const faqSchema = {
 >
 	<div class="wrap detail">
 		<nav class="crumbs" aria-label="Breadcrumb">
-			<a href="/">Home</a> &rsaquo; <a href="/safety">Safety FAQ</a> &rsaquo; <span>How to use</span>
+			<a href={withBase('/')}>Home</a> &rsaquo; <a href={withBase('/safety')}>Safety FAQ</a> &rsaquo;
+			<span>How to use</span>
 		</nav>
 
 		<h1><span aria-hidden="true">📘</span> How to use</h1>
@@ -35,7 +37,7 @@ const faqSchema = {
 		</div>
 
 		<p style="margin-top:2.5rem">
-			<a href="/safety">&larr; Back to Safety FAQ</a>
+			<a href={withBase('/safety')}>&larr; Back to Safety FAQ</a>
 		</p>
 	</div>
 

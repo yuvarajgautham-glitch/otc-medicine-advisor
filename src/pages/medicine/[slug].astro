@@ -4,6 +4,7 @@ import LabelSection from '../../components/LabelSection.astro';
 import medicines from '../../data/medicines.json';
 import { SYMPTOM_BY_ID } from '../../data/taxonomy.mjs';
 import { formatLabelDate, distinctBrands, buyLinks } from '../../lib/format.mjs';
+import { withBase } from '../../lib/url.mjs';
 
 export function getStaticPaths() {
 	return medicines.map((medicine) => ({
@@ -30,7 +31,8 @@ const description = `${m.genericName}${brands.length ? ` (${brands.slice(0, 2).j
 <AppLayout title={`${m.genericName} — OTC Medicine Advisor`} description={description}>
 	<div class="wrap detail">
 		<nav class="crumbs" aria-label="Breadcrumb">
-			<a href="/">Home</a> &rsaquo; <a href="/browse">Medicine catalog</a> &rsaquo; <span
+			<a href={withBase('/')}>Home</a> &rsaquo; <a href={withBase('/browse')}>Medicine catalog</a>
+			&rsaquo; <span
 				>{m.genericName}</span
 			>
 		</nav>
@@ -94,7 +96,7 @@ const description = `${m.genericName}${brands.length ? ` (${brands.slice(0, 2).j
 					<ul class="symptom-tags">
 						{symptoms.map((s) => (
 							<li>
-								<a href={`/?q=${encodeURIComponent(s.label)}`}>{s.label}</a>
+								<a href={withBase(`/?q=${encodeURIComponent(s.label)}`)}>{s.label}</a>
 							</li>
 						))}
 					</ul>
@@ -142,7 +144,7 @@ const description = `${m.genericName}${brands.length ? ` (${brands.slice(0, 2).j
 		</section>
 
 		<p style="margin-top:2rem">
-			<a href="/">&larr; Search for something else</a>
+			<a href={withBase('/')}>&larr; Search for something else</a>
 		</p>
 	</div>
 </AppLayout>

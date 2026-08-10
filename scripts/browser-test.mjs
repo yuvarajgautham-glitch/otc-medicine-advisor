@@ -15,7 +15,9 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SHOTS = join(ROOT, '.screenshots');
-const BASE = process.env.BASE_URL ?? 'http://localhost:4322';
+// The dev server honours astro.config's `base`, so the site lives under the
+// repo subfolder locally too — same shape as GitHub Pages.
+const BASE = process.env.BASE_URL ?? 'http://localhost:4322/otc-medicine-advisor';
 
 await mkdir(SHOTS, { recursive: true });
 
@@ -219,7 +221,7 @@ for (const [title, expectedPath, minQuestions] of subPages) {
 	await q.locator('summary').click();
 	await page.waitForTimeout(250);
 	check(`"${title}" opens on click`, await q.locator('.faq-answer').isVisible());
-	check(`"${title}" links back to the hub`, (await page.locator('a[href="/safety"]').count()) > 0);
+	check(`"${title}" links back to the hub`, (await page.locator('a[href$="/safety"]').count()) > 0);
 }
 
 // ------------------------------------------------------- data tracking Q
@@ -315,8 +317,9 @@ await page.fill('#q', 'itchy rash');
 await page.waitForTimeout(700);
 await page.click('.chip--filter[data-value="topical"]');
 await page.waitForTimeout(700);
+// Card hrefs already include the base, so resolve against the origin, not BASE.
 const firstResult = await page.locator('a.med-card').first().getAttribute('href');
-await page.goto(BASE + firstResult, { waitUntil: 'networkidle' });
+await page.goto(new URL(firstResult, BASE).href, { waitUntil: 'networkidle' });
 check(
 	'form filter returns a topical medicine',
 	/topical|cutaneous|transdermal|percutaneous/i.test(await page.textContent('body')),

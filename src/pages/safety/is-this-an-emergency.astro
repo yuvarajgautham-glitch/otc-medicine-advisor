@@ -1,0 +1,61 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import FaqItem from '../../components/FaqItem.astro';
+import { RED_FLAGS } from '../../data/red-flags.mjs';
+
+const emergency = RED_FLAGS.filter((f) => f.tier === 'emergency');
+
+const faqSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: emergency.map((f) => ({
+		'@type': 'Question',
+		name: f.title,
+		acceptedAnswer: { '@type': 'Answer', text: f.advice },
+	})),
+};
+---
+
+<AppLayout
+	title="Is this an emergency? — Safety FAQ"
+	description="Warning signs that need emergency care rather than an over-the-counter medicine."
+	current="safety"
+>
+	<div class="wrap detail">
+		<nav class="crumbs" aria-label="Breadcrumb">
+			<a href="/">Home</a> &rsaquo; <a href="/safety">Safety FAQ</a> &rsaquo; <span
+				>Is this an emergency?</span
+			>
+		</nav>
+
+		<h1><span aria-hidden="true">🚨</span> Is this an emergency?</h1>
+
+		<div class="flag flag--emergency">
+			<h2>If any of this is happening right now, stop reading</h2>
+			<p>
+				Call 911. Do not wait to see whether it passes, and do not drive yourself. Nothing on this
+				site treats any of the situations below.
+			</p>
+			<div class="actions">
+				<a href="tel:911">Call 911</a>
+				<a href="tel:988">Suicide &amp; Crisis Lifeline — 988</a>
+				<a href="tel:18002221222">Poison Control — 1-800-222-1222</a>
+			</div>
+		</div>
+
+		<p style="color:var(--text-muted)">
+			If a search mentions any of these, the site hides the medicine results. That is deliberate —
+			none of them have an over-the-counter answer.
+		</p>
+
+		<div class="faq">
+			{emergency.map((f) => <FaqItem question={f.title} answer={f.advice} variant="danger" />)}
+		</div>
+
+		<p style="margin-top:2.5rem">
+			<a href="/safety">&larr; Back to Safety FAQ</a>
+		</p>
+	</div>
+
+	<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} is:inline />
+</AppLayout>

@@ -1,0 +1,148 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import LabelSection from '../../components/LabelSection.astro';
+import medicines from '../../data/medicines.json';
+import { SYMPTOM_BY_ID } from '../../data/taxonomy.mjs';
+import { formatLabelDate, distinctBrands, buyLinks } from '../../lib/format.mjs';
+
+export function getStaticPaths() {
+	return medicines.map((medicine) => ({
+		params: { slug: medicine.slug },
+		props: { medicine },
+	}));
+}
+
+const { medicine: m } = Astro.props;
+
+const brands = distinctBrands(m.genericName, m.brandNames);
+const symptoms = m.symptoms.map((id) => SYMPTOM_BY_ID[id]).filter(Boolean);
+const labelDate = formatLabelDate(m.effectiveTime);
+const links = buyLinks(m.genericName);
+const dailyMed = m.splSetId
+	? `https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=${m.splSetId}`
+	: null;
+
+const description = `${m.genericName}${brands.length ? ` (${brands.slice(0, 2).join(', ')})` : ''} — ${
+	m.purpose || 'over-the-counter medicine'
+}. What it treats, how to take it, and its warnings, from the FDA label.`;
+---
+
+<AppLayout title={`${m.genericName} — OTC Medicine Advisor`} description={description}>
+	<div class="wrap detail">
+		<nav class="crumbs" aria-label="Breadcrumb">
+			<a href="/">Home</a> &rsaquo; <a href="/browse">Medicine catalog</a> &rsaquo; <span
+				>{m.genericName}</span
+			>
+		</nav>
+
+		<header class="detail-head">
+			{m.purpose && <span class="purpose">{m.purpose}</span>}
+			<h1>{m.genericName}</h1>
+			{
+				brands.length > 0 && (
+					<p class="brands">
+						Also sold as <strong>{brands.slice(0, 6).join(', ')}</strong>
+						{brands.length > 6 && ' and other store brands'}
+					</p>
+				)
+			}
+		</header>
+
+		<div class="flag flag--urgent" style="margin-top:1.5rem">
+			<h3><span aria-hidden="true">⚠️</span>Read the actual package before taking this</h3>
+			<p>
+				Strengths, doses and formulations differ between products containing {m.genericName}. The
+				page below summarises <em>one</em> FDA label — the box in your hand is the one that counts. If
+				you take other medicines, are pregnant, or have an ongoing health condition, check with a
+				pharmacist first.
+			</p>
+		</div>
+
+		<LabelSection title="What it's used for" icon="💊" text={m.uses} />
+		<LabelSection title="How and when to take it" icon="📋" text={m.directions} />
+		<LabelSection title="When using this product" icon="ℹ️" text={m.whenUsing} />
+		<LabelSection title="Do not use if" icon="⛔" text={m.doNotUse} variant="danger" />
+		<LabelSection
+			title="Stop use and ask a doctor if"
+			icon="🛑"
+			text={m.stopUse}
+			variant="danger"
+		/>
+		<LabelSection title="Ask a doctor before use if" icon="🩺" text={m.askDoctor} variant="warn" />
+		<LabelSection
+			title="Ask a doctor or pharmacist before use if"
+			icon="🩺"
+			text={m.askDoctorOrPharmacist}
+			variant="warn"
+		/>
+		<LabelSection
+			title="If pregnant or breastfeeding"
+			icon="🤰"
+			text={m.pregnancy}
+			variant="warn"
+		/>
+		<LabelSection title="Full warnings" icon="⚠️" text={m.warnings} variant="warn" />
+		<LabelSection title="Keep out of reach of children" icon="🧒" text={m.keepOutOfReach} />
+		<LabelSection title="Active ingredient" icon="🧪" text={m.activeIngredient} />
+		<LabelSection title="Inactive ingredients" icon="🧾" text={m.inactiveIngredient} />
+		<LabelSection title="Storage" icon="📦" text={m.storage} />
+
+		{
+			symptoms.length > 0 && (
+				<section class="section">
+					<h2><span aria-hidden="true">🔎</span>Symptoms this is labelled to treat</h2>
+					<ul class="symptom-tags">
+						{symptoms.map((s) => (
+							<li>
+								<a href={`/?q=${encodeURIComponent(s.label)}`}>{s.label}</a>
+							</li>
+						))}
+					</ul>
+				</section>
+			)
+		}
+
+		<section class="section">
+			<h2><span aria-hidden="true">🛒</span>Where to buy it</h2>
+			<p>
+				{m.genericName} is available over the counter in the United States — no prescription needed.
+				You'll find it in pharmacies (CVS, Walgreens, Rite Aid), supermarkets and big-box stores like
+				Walmart and Target.
+			</p>
+			<p>
+				<strong>Buy the store brand.</strong> Look for "{m.genericName}" in the active ingredients box
+				on the back. Supermarket own-brands are usually the same medicine at a fraction of the price
+				of the advertised name.
+			</p>
+			<ul class="buy-list">
+				{links.map((l) => <li><a href={l.href} rel="noopener nofollow" target="_blank">{l.label}</a></li>)}
+			</ul>
+			<p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.9rem;margin-bottom:0">
+				These are searches on third-party retail sites, not stock or price guarantees. We have no
+				commercial relationship with any of them.
+			</p>
+		</section>
+
+		<section class="section">
+			<h2><span aria-hidden="true">📄</span>Where this information came from</h2>
+			<dl class="meta-grid">
+				{m.manufacturer && (<><dt>Label filed by</dt><dd>{m.manufacturer}</dd></>)}
+				{labelDate && (<><dt>Label version</dt><dd>{labelDate}</dd></>)}
+				{m.routes.length > 0 && (<><dt>How it's taken</dt><dd>{m.routes.join(', ')}</dd></>)}
+				{m.ndc && (<><dt>NDC code</dt><dd>{m.ndc}</dd></>)}
+			</dl>
+			<p style="margin-top:1rem;margin-bottom:0;font-size:0.92rem">
+				Sourced from the FDA's <a href="https://open.fda.gov/apis/drug/label/" rel="noopener">openFDA
+				drug label API</a>{
+					dailyMed && (
+						<> · <a href={dailyMed} rel="noopener" target="_blank">Read the full official label on DailyMed</a></>
+					)
+				}
+			</p>
+		</section>
+
+		<p style="margin-top:2rem">
+			<a href="/">&larr; Search for something else</a>
+		</p>
+	</div>
+</AppLayout>

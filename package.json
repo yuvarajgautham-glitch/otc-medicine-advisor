@@ -1,0 +1,30 @@
+{
+  "name": "medicine-finder",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Search over-the-counter medicines sold in US pharmacies by how you feel, using FDA label data.",
+  "scripts": {
+    "predev": "node scripts/ensure-fresh.mjs",
+    "dev": "astro dev",
+    "prestart": "node scripts/ensure-fresh.mjs",
+    "start": "astro dev",
+    "prebuild": "node scripts/ensure-fresh.mjs",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "data": "node scripts/fetch-openfda.mjs",
+    "data:fresh": "node scripts/fetch-openfda.mjs --fresh",
+    "data:check": "node scripts/ensure-fresh.mjs",
+    "data:now": "node scripts/ensure-fresh.mjs --force",
+    "test": "node scripts/smoke-test.mjs",
+    "test:browser": "node scripts/browser-test.mjs",
+    "rank": "node scripts/debug-rank.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.1.6",
+    "sharp": "^0.35.3"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.62.1"
+  }
+}

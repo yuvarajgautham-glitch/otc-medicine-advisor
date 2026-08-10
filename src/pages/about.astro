@@ -1,0 +1,129 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import medicines from '../data/medicines.json';
+import meta from '../data/meta.json';
+import { SYMPTOMS } from '../data/taxonomy.mjs';
+
+const tagged = medicines.filter((m) => m.symptoms.length).length;
+---
+
+<AppLayout
+	title="About the data — OTC Medicine Advisor"
+	description="Where this catalog's information comes from, how symptom matching works, and what its limitations are."
+	current="about"
+>
+	<div class="wrap detail">
+		<p class="last-updated" id="fda-stamp" data-generated={meta.generatedAt}>
+			<span class="dot" aria-hidden="true"></span>Last pulled from FDA — {meta.displayStamp}
+		</p>
+
+		<script is:inline>
+			// A deployed copy can sit untouched for months. The launch-time check
+			// can't help there, so say so plainly rather than showing a stale date
+			// as though it were current.
+			(() => {
+				const stamp = document.getElementById('fda-stamp');
+				const generated = new Date(stamp?.dataset.generated ?? '');
+				if (!stamp || Number.isNaN(generated.getTime())) return;
+				const days = Math.floor((Date.now() - generated.getTime()) / 86400000);
+				if (days < 30) return;
+				stamp.classList.add('last-updated--stale');
+				const note = document.createElement('span');
+				note.className = 'stale-note';
+				note.textContent = `${days} days ago — refresh due`;
+				stamp.append(note);
+			})();
+		</script>
+
+		<h1>About the data</h1>
+
+		<section class="section">
+			<h2><span aria-hidden="true">🏛️</span>Everything here comes from the FDA</h2>
+			<p>
+				Every medicine page is built from the U.S. Food &amp; Drug Administration's
+				<a href="https://open.fda.gov/apis/drug/label/" rel="noopener">openFDA drug label API</a> —
+				the same "Drug Facts" text that is legally required on the package. The wording in the
+				<em>Uses</em>, <em>Directions</em> and <em>Warnings</em> sections is the manufacturer's own,
+				reproduced rather than rewritten.
+			</p>
+			<p style="margin-bottom:0">
+				We have not written any medical claims ourselves, and we do not rank, rate or recommend one
+				product over another.
+			</p>
+		</section>
+
+		<section class="section">
+			<h2><span aria-hidden="true">🔎</span>How symptom search works</h2>
+			<p>
+				Drug labels are legal documents. They say "temporarily relieves nasal congestion", not
+				"unblocks your nose". So there are two layers:
+			</p>
+			<ul class="label-list">
+				<li>
+					A <strong>symptom taxonomy</strong> of {SYMPTOMS.length} common complaints, each with the
+					everyday phrases people actually type ("stuffy nose", "blocked up", "can't breathe through
+					my nose") and the corresponding label terminology.
+				</li>
+				<li>
+					A <strong>build-time tagging pass</strong> that reads each label's <em>Purpose</em> and
+					<em>Uses</em> text and tags the medicine with the symptoms it is officially labelled to
+					treat. {tagged} of {medicines.length} medicines carry at least one symptom tag.
+				</li>
+			</ul>
+			<p style="margin-bottom:0">
+				Your search never leaves your browser — the index is a static file and matching runs
+				client-side. There is no analytics, no account, and no server logging what you searched for.
+			</p>
+		</section>
+
+		<section class="section">
+			<h2><span aria-hidden="true">📦</span>What's in the catalog — and what isn't</h2>
+			<p>
+				openFDA holds well over a hundred thousand OTC labels, but they are overwhelmingly
+				duplicates: every supermarket's own-brand ibuprofen files separately. So the catalog is built
+				around the {medicines.length} most widely-marketed <em>active ingredients</em>, with one
+				well-documented label representing each, and brand names collected across all of them.
+			</p>
+			<p style="margin-bottom:0">
+				Deliberately excluded: sunscreens, antiperspirants, toothpaste and hand sanitiser. The FDA
+				classes these as OTC drugs, but nobody searching "my head hurts" needs them.
+			</p>
+		</section>
+
+		<section class="section section--warn">
+			<h2><span aria-hidden="true">⚠️</span>Known limitations</h2>
+			<ul class="label-list">
+				<li>
+					<strong>One label per ingredient.</strong> Strengths, formulations and age limits vary
+					between products. The page is a guide; the box in your hand is authoritative.
+				</li>
+				<li>
+					<strong>United States only.</strong> Availability and brand names differ elsewhere, and
+					some medicines sold OTC here need a prescription in other countries.
+				</li>
+				<li>
+					<strong>No interaction checking.</strong> This site does not know what else you take and
+					cannot warn you about combinations. A pharmacist can.
+				</li>
+				<li>
+					<strong>Symptom matching is approximate.</strong> It matches wording, not diagnosis. It
+					cannot tell a tension headache from a migraine, or heartburn from something cardiac.
+				</li>
+				<li>
+					<strong>Labels change.</strong> Data is fetched at build time, so it is a snapshot. Each
+					medicine page shows its label version date and links to the live official record on
+					DailyMed.
+				</li>
+			</ul>
+		</section>
+
+		<section class="section">
+			<h2><span aria-hidden="true">⚖️</span>Independence</h2>
+			<p style="margin-bottom:0">
+				This site is not affiliated with, endorsed by, or connected to the FDA, any pharmacy, or any
+				manufacturer. Retailer links are plain searches with no affiliate tracking, and no product is
+				promoted in exchange for payment.
+			</p>
+		</section>
+	</div>
+</AppLayout>

@@ -1,0 +1,55 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import medicines from '../data/medicines.json';
+import { distinctBrands } from '../lib/format.mjs';
+
+const sorted = [...medicines].sort((a, b) => a.genericName.localeCompare(b.genericName));
+
+const groups = new Map<string, typeof sorted>();
+for (const m of sorted) {
+	const letter = /^[A-Za-z]/.test(m.genericName) ? m.genericName[0].toUpperCase() : '#';
+	if (!groups.has(letter)) groups.set(letter, []);
+	groups.get(letter)!.push(m);
+}
+const letters = [...groups.keys()];
+---
+
+<AppLayout
+	title="Medicine catalog — OTC Medicine Advisor"
+	description="An A–Z catalog of over-the-counter medicines available in US pharmacies, with FDA label information for each."
+	current="browse"
+>
+	<div class="wrap" style="padding-block:2rem 3rem">
+		<h1>Medicine catalog</h1>
+		<p style="color:var(--text-muted);max-width:65ch">
+			{medicines.length} over-the-counter active ingredients, listed by their generic name — the name
+			printed in the "active ingredients" box on the back of the package. Brand names are listed on
+			each entry.
+		</p>
+
+		<nav class="chips" style="justify-content:flex-start;margin-bottom:2rem" aria-label="Jump to letter">
+			{letters.map((l) => <a class="chip" href={`#letter-${l === '#' ? 'other' : l}`}>{l}</a>)}
+		</nav>
+
+		{
+			letters.map((letter) => (
+				<section class="browse-group" id={`letter-${letter === '#' ? 'other' : letter}`}>
+					<h2>{letter}</h2>
+					<ul class="browse-grid">
+						{groups.get(letter)!.map((m) => {
+							const brands = distinctBrands(m.genericName, m.brandNames);
+							return (
+								<li>
+									<a href={`/medicine/${m.slug}/`}>
+										{m.genericName}
+										<span class="sub">{m.purpose || brands.slice(0, 2).join(', ') || 'OTC medicine'}</span>
+									</a>
+								</li>
+							);
+						})}
+					</ul>
+				</section>
+			))
+		}
+	</div>
+</AppLayout>

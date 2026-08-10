@@ -1,0 +1,92 @@
+---
+import '../styles/app.css';
+
+interface Props {
+	title: string;
+	description?: string;
+	current?: 'home' | 'browse' | 'safety' | 'about' | 'contact';
+}
+
+const {
+	title,
+	description = 'Search common over-the-counter medicines available in US pharmacies by how you are feeling. Information sourced from the FDA.',
+	current,
+} = Astro.props;
+
+const nav = [
+	{ id: 'home', href: '/', label: 'Home' },
+	{ id: 'browse', href: '/browse', label: 'Medicine catalog' },
+	{ id: 'safety', href: '/safety', label: 'Safety FAQ' },
+	{ id: 'about', href: '/about', label: 'About the data' },
+	{ id: 'contact', href: '/contact', label: 'Contact' },
+] as const;
+
+const year = new Date().getFullYear();
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+	</head>
+	<body>
+		<a class="skip-link" href="#main">Skip to content</a>
+
+		<header class="site-header">
+			<div class="wrap">
+				<a class="brand" href="/">
+					<svg width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+						<rect
+							x="2.5"
+							y="7.5"
+							width="19"
+							height="9"
+							rx="4.5"
+							stroke="currentColor"
+							stroke-width="2"></rect>
+						<path d="M12 7.5v9" stroke="currentColor" stroke-width="2"></path>
+					</svg>
+					OTC Medicine Advisor
+				</a>
+				<nav class="site-nav" aria-label="Main">
+					{
+						nav.map((item) => (
+							<a href={item.href} aria-current={current === item.id ? 'page' : undefined}>
+								{item.label}
+							</a>
+						))
+					}
+				</nav>
+			</div>
+		</header>
+
+		<main id="main">
+			<slot />
+		</main>
+
+		<footer class="site-footer">
+			<div class="wrap">
+				<p class="disclaimer">
+					<strong>This is not medical advice.</strong> This site is an information tool, not a
+					clinician. It cannot examine you, does not know your medical history, and cannot tell you
+					what is wrong. Always read the label on the actual package, and ask a pharmacist — they are
+					free to talk to and genuinely expert. If something feels serious, urgent, or is getting
+					worse, contact a doctor or call 911.
+				</p>
+				<nav class="footer-links" aria-label="Footer">
+					<a href="/safety">Safety FAQ — when to see a doctor</a>
+					<a href="/about">Where this data comes from</a>
+					<a href="/contact">Contact us</a>
+					<a href="https://open.fda.gov/apis/drug/label/" rel="noopener">openFDA drug labels</a>
+				</nav>
+				<p style="margin-top:1.25rem">
+					Label data from the U.S. Food &amp; Drug Administration. Not affiliated with or endorsed by
+					the FDA. &copy; {year}
+				</p>
+			</div>
+		</footer>
+	</body>
+</html>

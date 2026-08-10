@@ -1,0 +1,40 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+
+const EMAIL = 'abcdefg1234@gmail.com';
+---
+
+<AppLayout
+	title="Contact — OTC Medicine Advisor"
+	description="Get in touch with feedback, corrections or suggestions for the OTC Medicine Advisor."
+	current="contact"
+>
+	<div class="wrap detail">
+		<h1>Contact</h1>
+
+		<section class="panel">
+			<h2><span aria-hidden="true">💌</span>We want your feedback</h2>
+			<p class="panel-intro">
+				This site is built to be useful to people trying to work out what to take, and the fastest
+				way it gets better is hearing from the people using it. Tell us what worked, what didn't,
+				and what you expected to find but couldn't.
+			</p>
+			<p style="margin-bottom:1.25rem">
+				Whether something is wrong, confusing, missing, or you just have an idea — we'd genuinely
+				like to hear it.
+			</p>
+			<a class="contact-email" href={`mailto:${EMAIL}`}>
+				<span aria-hidden="true">✉️</span>{EMAIL}
+			</a>
+		</section>
+
+		<section class="section section--warn">
+			<h2><span aria-hidden="true">⚠️</span>Please don't email us for medical advice</h2>
+			<p style="margin-bottom:0">
+				We cannot tell you what to take, what is wrong with you, or whether something is safe in
+				your situation — and it would be irresponsible to try. For that, speak to a pharmacist,
+				which is free and needs no appointment, or to your doctor. If it is urgent, call 911.
+			</p>
+		</section>
+	</div>
+</AppLayout>

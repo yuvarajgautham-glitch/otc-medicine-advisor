@@ -1,0 +1,43 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import FaqItem from '../../components/FaqItem.astro';
+import { GENERAL_FAQ } from '../../data/faq.mjs';
+
+const faqSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: GENERAL_FAQ.map((item) => ({
+		'@type': 'Question',
+		name: item.q,
+		acceptedAnswer: { '@type': 'Answer', text: item.a },
+	})),
+};
+---
+
+<AppLayout
+	title="How to use — Safety FAQ"
+	description="How to use over-the-counter medicine safely: doses, mixing medicines, children, pregnancy, and what this site does with your data."
+	current="safety"
+>
+	<div class="wrap detail">
+		<nav class="crumbs" aria-label="Breadcrumb">
+			<a href="/">Home</a> &rsaquo; <a href="/safety">Safety FAQ</a> &rsaquo; <span>How to use</span>
+		</nav>
+
+		<h1><span aria-hidden="true">📘</span> How to use</h1>
+		<p style="font-size:1.05rem;color:var(--text-muted)">
+			Using pharmacy medicines safely, what this site can and cannot do for you, and what happens to
+			what you type into it.
+		</p>
+
+		<div class="faq">
+			{GENERAL_FAQ.map((item) => <FaqItem question={item.q} answer={item.a} />)}
+		</div>
+
+		<p style="margin-top:2.5rem">
+			<a href="/safety">&larr; Back to Safety FAQ</a>
+		</p>
+	</div>
+
+	<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} is:inline />
+</AppLayout>

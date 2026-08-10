@@ -1,0 +1,52 @@
+name: Refresh medicine data
+
+# Re-pulls the catalog from openFDA so new and updated FDA labels show up, and
+# stamps the "Last updated" date on the home page.
+on:
+  schedule:
+    # 06:00 UTC on the 1st of every month.
+    - cron: '0 6 1 * *'
+  # Also runnable by hand from the Actions tab.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - run: npm ci
+
+      # The same pull that scripts/ensure-fresh.mjs triggers on launch, forced
+      # here rather than gated on the 30-day check. --fresh bypasses the local
+      # response cache (which the runner won't have anyway) so newly published
+      # labels are guaranteed to be picked up.
+      - name: Fetch latest FDA labels
+        run: npm run data:fresh
+
+      # If the fetch produced something broken, fail here rather than commit it.
+      - name: Check the catalog still works
+        run: npm test
+
+      - name: Check the site still builds
+        run: npm run build
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/medicines.json src/data/meta.json public/search-index.json
+          if git diff --staged --quiet; then
+            echo "No label changes this month."
+          else
+            git commit -m "Monthly data refresh from openFDA"
+            git push
+          fi

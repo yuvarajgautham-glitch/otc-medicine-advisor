@@ -1,0 +1,47 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import FaqItem from '../../components/FaqItem.astro';
+import { RED_FLAGS } from '../../data/red-flags.mjs';
+
+const urgent = RED_FLAGS.filter((f) => f.tier === 'urgent');
+
+const faqSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: urgent.map((f) => ({
+		'@type': 'Question',
+		name: f.title,
+		acceptedAnswer: { '@type': 'Answer', text: f.advice },
+	})),
+};
+---
+
+<AppLayout
+	title="Do I need a doctor for this? — Safety FAQ"
+	description="Situations that are not emergencies, but where an over-the-counter medicine is the wrong tool and a clinician is needed."
+	current="safety"
+>
+	<div class="wrap detail">
+		<nav class="crumbs" aria-label="Breadcrumb">
+			<a href="/">Home</a> &rsaquo; <a href="/safety">Safety FAQ</a> &rsaquo; <span
+				>Do I need a doctor for this?</span
+			>
+		</nav>
+
+		<h1><span aria-hidden="true">🩺</span> Do I need a doctor for this?</h1>
+		<p style="font-size:1.05rem;color:var(--text-muted)">
+			None of these are emergencies. They are situations where an over-the-counter product is simply
+			the wrong tool — the site shows a warning alongside any results rather than hiding them.
+		</p>
+
+		<div class="faq">
+			{urgent.map((f) => <FaqItem question={f.title} answer={f.advice} variant="warn" />)}
+		</div>
+
+		<p style="margin-top:2.5rem">
+			<a href="/safety">&larr; Back to Safety FAQ</a>
+		</p>
+	</div>
+
+	<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} is:inline />
+</AppLayout>

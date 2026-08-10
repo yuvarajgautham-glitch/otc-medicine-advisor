@@ -1,0 +1,21 @@
+---
+interface Props {
+	question: string;
+	answer: string;
+	variant?: 'default' | 'danger' | 'warn';
+	open?: boolean;
+}
+
+const { question, answer, variant = 'default', open = false } = Astro.props;
+
+// <details> gives keyboard support, find-in-page expansion and correct
+// semantics for free, so there is no reason to build a custom accordion.
+const cls = variant === 'default' ? 'faq-item' : `faq-item faq-item--${variant}`;
+---
+
+<details class={cls} open={open}>
+	<summary>{question}</summary>
+	<div class="faq-answer">
+		<p>{answer}</p>
+	</div>
+</details>

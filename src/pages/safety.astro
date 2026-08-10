@@ -1,0 +1,86 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import { GENERAL_FAQ } from '../data/faq.mjs';
+import { RED_FLAGS } from '../data/red-flags.mjs';
+
+const sections = [
+	{
+		href: '/safety/how-to-use',
+		icon: '📘',
+		title: 'How to use',
+		blurb: 'Doses, mixing medicines, children, pregnancy, privacy and what this site can and cannot do.',
+		count: GENERAL_FAQ.length,
+	},
+	{
+		href: '/safety/is-this-an-emergency',
+		icon: '🚨',
+		title: 'Is this an emergency?',
+		blurb: 'The warning signs that mean stop searching and get help now. No pharmacy product is the answer to any of these.',
+		count: RED_FLAGS.filter((f) => f.tier === 'emergency').length,
+	},
+	{
+		href: '/safety/do-i-need-a-doctor',
+		icon: '🩺',
+		title: 'Do I need a doctor for this?',
+		blurb: 'Not emergencies, but situations where an over-the-counter product is the wrong tool for the job.',
+		count: RED_FLAGS.filter((f) => f.tier === 'urgent').length,
+	},
+];
+---
+
+<AppLayout
+	title="Safety FAQ — when to see a doctor instead"
+	description="Answers to common questions about using over-the-counter medicine safely, and the warning signs that mean you should see a doctor instead."
+	current="safety"
+>
+	<div class="wrap detail">
+		<h1>Safety FAQ</h1>
+		<p style="font-size:1.05rem;color:var(--text-muted)">
+			Common questions about using pharmacy medicines safely — and about the warning signs that mean
+			no pharmacy product is the right answer.
+		</p>
+
+		<div class="flag flag--emergency">
+			<h2><span aria-hidden="true">🚨</span>Call 911 now if you have any of these</h2>
+			<p>
+				Chest pain or pressure · sudden weakness, numbness or drooping on one side · slurred speech ·
+				severe difficulty breathing · swelling of the face, lips or throat · coughing or vomiting
+				blood · a seizure · a serious head injury · thoughts of harming yourself.
+			</p>
+			<div class="actions">
+				<a href="tel:911">Call 911</a>
+				<a href="tel:988">Suicide &amp; Crisis Lifeline — 988</a>
+				<a href="tel:18002221222">Poison Control — 1-800-222-1222</a>
+			</div>
+		</div>
+
+		<section class="panel">
+			<h2><span aria-hidden="true">💬</span>For additional questions</h2>
+			<p class="panel-intro">
+				Pick a topic to read the questions and answers.
+			</p>
+			<ul class="subbox-list">
+				{
+					sections.map((section) => (
+						<li>
+							<a class="subbox" href={section.href}>
+								<span class="subbox-icon" aria-hidden="true">
+									{section.icon}
+								</span>
+								<span class="subbox-body">
+									<span class="subbox-title">{section.title}</span>
+									<span class="subbox-blurb">{section.blurb}</span>
+								</span>
+								<span class="subbox-count">{section.count} questions &rsaquo;</span>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</section>
+
+		<p style="margin-top:2.5rem">
+			<a href="/">&larr; Back to search</a>
+		</p>
+	</div>
+</AppLayout>

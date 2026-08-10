@@ -1,0 +1,548 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import { SYMPTOMS, SYMPTOM_GROUPS } from '../data/taxonomy.mjs';
+import { AGE_BANDS, ROUTE_GROUPS, PREFERENCES } from '../lib/search.mjs';
+import medicines from '../data/medicines.json';
+
+// A handful of common starting points, shown before anyone types.
+const QUICK_PICKS = [
+	'headache',
+	'sore throat',
+	'stuffy nose',
+	'heartburn',
+	'cant sleep',
+	'itchy rash',
+	'period cramps',
+	'upset stomach',
+];
+
+const symptomCount = SYMPTOMS.length;
+const medCount = medicines.length;
+---
+
+<AppLayout
+	title="OTC Medicine Advisor — search pharmacy medicines by how you feel"
+	current="home"
+>
+	<section class="hero wrap">
+		<h1>How are you feeling?</h1>
+		<p class="lede">
+			Describe your symptoms in your own words. We'll show over-the-counter medicines sold in US
+			pharmacies that are labelled to treat them — and tell you when you should see a doctor instead.
+		</p>
+
+		<div class="search-shell">
+			<form class="search-box" id="search-form" role="search" autocomplete="off">
+				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+					<circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"></circle>
+					<path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+					></path>
+				</svg>
+				<label class="sr-only" for="q" style="position:absolute;left:-9999px">
+					Describe how you are feeling
+				</label>
+				<input
+					id="q"
+					name="q"
+					type="search"
+					placeholder="e.g. pounding headache and a fever"
+					enterkeyhint="search"
+				/>
+				<button type="submit">Search</button>
+			</form>
+
+			<p class="search-hint">
+				Pick as many symptoms as you have — they combine into one search.
+				<br />
+				{`Searching ${medCount} medicines across ${symptomCount} symptoms.`} Nothing you type leaves
+				your browser.
+			</p>
+
+			<div class="chips" id="quick-picks">
+				{
+					QUICK_PICKS.map((pick) => (
+						<button class="chip" type="button" data-q={pick} aria-pressed="false">
+							{pick}
+						</button>
+					))
+				}
+			</div>
+
+			<p class="selection-bar" id="selection-bar" hidden>
+				<span id="selection-summary"></span>
+				<button type="button" id="clear-all">Clear all</button>
+			</p>
+		</div>
+	</section>
+
+	<div class="wrap">
+		<div id="results" aria-live="polite"></div>
+
+		<section id="tailor" style="max-width:860px;margin:3rem auto 0">
+			<h2>Anything else to know?</h2>
+			<p style="color:var(--text-muted);margin-top:-0.4rem">
+				Optional. These narrow the results to medicines that actually suit the person taking them.
+			</p>
+
+			<div class="filter-group">
+				<h3 class="filter-label">Who is it for?</h3>
+				<div class="chips" style="justify-content:flex-start">
+					{
+						AGE_BANDS.map((band: { id: string; label: string }) => (
+							<button
+								class="chip chip--filter"
+								type="button"
+								data-filter="age"
+								data-value={band.id}
+								aria-pressed="false"
+							>
+								{band.label}
+							</button>
+						))
+					}
+				</div>
+				<p class="filter-note">
+					Picking an age hides anything whose label doesn't state it's suitable — including
+					medicines that simply don't say. Always confirm a child's dose with a pharmacist.
+				</p>
+			</div>
+
+			<div class="filter-group">
+				<h3 class="filter-label">How would you take it?</h3>
+				<div class="chips" style="justify-content:flex-start">
+					{
+						ROUTE_GROUPS.map((group: { id: string; label: string }) => (
+							<button
+								class="chip chip--filter"
+								type="button"
+								data-filter="routes"
+								data-value={group.id}
+								aria-pressed="false"
+							>
+								{group.label}
+							</button>
+						))
+					}
+				</div>
+			</div>
+
+			<div class="filter-group">
+				<h3 class="filter-label">Anything to avoid?</h3>
+				<div class="chips" style="justify-content:flex-start">
+					{
+						PREFERENCES.map((pref: { id: string; label: string; hint: string }) => (
+							<button
+								class="chip chip--filter"
+								type="button"
+								data-filter="preferences"
+								data-value={pref.id}
+								aria-pressed="false"
+								title={pref.hint}
+							>
+								{pref.label}
+							</button>
+						))
+					}
+				</div>
+			</div>
+		</section>
+
+		<section id="browse-symptoms" style="max-width:860px;margin:3rem auto 0">
+			<h2>Or browse by symptom</h2>
+			<p style="color:var(--text-muted);margin-top:-0.4rem">
+				Click any number of these — selected symptoms stack up into a single search.
+			</p>
+			{
+				SYMPTOM_GROUPS.map((group) => {
+					const items = SYMPTOMS.filter((s) => s.group === group.id);
+					if (!items.length) return null;
+					return (
+						<div style="margin-bottom:1.5rem">
+							<h3 style="color:var(--text-muted);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.07em">
+								{group.label}
+							</h3>
+							<div class="chips" style="justify-content:flex-start">
+								{items.map((s) => (
+									<button class="chip" type="button" data-q={s.label} aria-pressed="false">
+										{s.label}
+									</button>
+								))}
+							</div>
+						</div>
+					);
+				})
+			}
+		</section>
+	</div>
+</AppLayout>
+
+<script>
+	import { matchRedFlags, RED_FLAGS } from '../data/red-flags.mjs';
+	import {
+		matchSymptoms,
+		rankMedicines,
+		filterIndex,
+		rankByPopularity,
+		hasActiveFilters,
+		AGE_BANDS,
+		ROUTE_GROUPS,
+		PREFERENCES,
+		CHILD_AGE_BANDS,
+	} from '../lib/search.mjs';
+
+	// Age / form / preference selections. Kept separate from the search box
+	// because they aren't symptoms - they describe the person, not the problem.
+	const filters: { age: string | null; routes: string[]; preferences: string[] } = {
+		age: null,
+		routes: [],
+		preferences: [],
+	};
+
+	const filterLabel = (kind: string, value: string) => {
+		const source: any[] =
+			kind === 'age' ? AGE_BANDS : kind === 'routes' ? ROUTE_GROUPS : PREFERENCES;
+		return source.find((item) => item.id === value)?.label ?? value;
+	};
+
+	const form = document.getElementById('search-form') as HTMLFormElement;
+	const input = document.getElementById('q') as HTMLInputElement;
+	const results = document.getElementById('results') as HTMLElement;
+
+	let index: any[] | null = null;
+	let indexPromise: Promise<any[]> | null = null;
+
+	function loadIndex() {
+		if (!indexPromise) {
+			indexPromise = fetch('/search-index.json')
+				.then((r) => r.json())
+				.then((data) => (index = data));
+		}
+		return indexPromise;
+	}
+
+	// Warm the index as soon as the user shows intent.
+	input.addEventListener('focus', loadIndex, { once: true });
+
+	const escapeHtml = (s: string) =>
+		String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+
+	function renderFlags(flags: any[]) {
+		return flags
+			.map((f) => {
+				const isEmergency = f.tier === 'emergency';
+				const icon = isEmergency ? '🚨' : '⚠️';
+				const actions = isEmergency
+					? `<div class="actions">
+							<a href="tel:911">Call 911</a>
+							${f.id === 'mental-health-crisis' ? '<a href="tel:988">Call or text 988</a>' : ''}
+							${f.id === 'overdose' ? '<a href="tel:18002221222">Poison Control</a>' : ''}
+						</div>`
+					: '';
+				return `<div class="flag flag--${isEmergency ? 'emergency' : 'urgent'}">
+					<h2><span aria-hidden="true">${icon}</span>${escapeHtml(f.title)}</h2>
+					<p>${escapeHtml(f.advice)}</p>
+					${actions}
+				</div>`;
+			})
+			.join('');
+	}
+
+	function renderCards(ranked: any[]) {
+		return `<ul class="card-list">${ranked
+			.map(({ entry }) => {
+				const brands = (entry.b ?? []).filter((b: string) => b.toLowerCase() !== entry.n.toLowerCase());
+				return `<li><a class="med-card" href="/medicine/${entry.s}/">
+					${entry.p ? `<span class="purpose">${escapeHtml(entry.p)}</span>` : ''}
+					<h3>${escapeHtml(entry.n)}</h3>
+					${brands.length ? `<p class="brands">Sold as ${escapeHtml(brands.slice(0, 3).join(', '))}</p>` : ''}
+					<p class="snippet">${escapeHtml(entry.u)}</p>
+				</a></li>`;
+			})
+			.join('')}</ul>`;
+	}
+
+	let lastQuery = '';
+
+	/**
+	 * Re-run the search without anything appearing to move.
+	 *
+	 * The results block sits above the symptom chips and filters, so changing it
+	 * reflows everything below. Browsers mostly compensate via scroll anchoring,
+	 * but not reliably — adding the "Narrowed to" bar shifted the chip under the
+	 * cursor by ~70px. Measuring the clicked control before and after, then
+	 * correcting by the difference, pins it exactly where it was.
+	 */
+	async function runKeepingPlace(anchor: HTMLElement, query: string) {
+		const before = anchor.getBoundingClientRect().top;
+		await run(query);
+		const drift = anchor.getBoundingClientRect().top - before;
+		if (Math.abs(drift) > 0.5) window.scrollBy(0, drift);
+	}
+
+	async function run(query: string, { force = false } = {}) {
+		const q = query.trim();
+		lastQuery = q;
+
+		// Filters on their own are a legitimate request - "show me things safe
+		// for a 4-year-old" doesn't need a symptom.
+		if (!q) {
+			if (hasActiveFilters(filters)) {
+				await loadIndex();
+				if (lastQuery !== '') return;
+				renderFilterOnly();
+			} else {
+				results.innerHTML = '';
+			}
+			return;
+		}
+
+		const flags = matchRedFlags(q);
+		const emergencies = flags.filter((f: any) => f.tier === 'emergency');
+
+		// An emergency match suppresses the shopping results entirely. Nobody
+		// having a stroke should be reading about paracetamol.
+		if (emergencies.length && !force) {
+			results.innerHTML = `${renderFlags(emergencies)}
+				<div class="suppressed-note">
+					<p style="margin:0">We've hidden medicine suggestions for this search on purpose — none of
+					them are the right answer to what you described. If you're certain this isn't an emergency,
+					you can <button type="button" id="show-anyway">show them anyway</button>.</p>
+				</div>`;
+			document.getElementById('show-anyway')?.addEventListener('click', () => run(q, { force: true }));
+			// Deliberately no scrolling - see the note at the end of run().
+			return;
+		}
+
+		await loadIndex();
+		if (lastQuery !== q) return; // a newer search superseded this one
+
+		const symptoms = matchSymptoms(q);
+		const pool = filterIndex(index!, filters);
+		const ranked = rankMedicines(q, pool, symptoms).slice(0, 24);
+		const urgent = [...flags.filter((f: any) => f.tier === 'urgent'), ...filterDrivenFlags()];
+
+		const header = ranked.length
+			? `<div class="results-head">
+					<h2>${symptoms.length ? `For ${escapeHtml(symptoms.slice(0, 3).map((s: any) => s.symptom.label.toLowerCase()).join(', '))}` : 'Results'}</h2>
+					<span class="results-count">${ranked.length} medicine${ranked.length === 1 ? '' : 's'}</span>
+				</div>`
+			: '';
+
+		const body = ranked.length
+			? renderFilterSummary() + renderCards(ranked)
+			: `<div class="empty-state">
+					<p><strong>No medicines matched "${escapeHtml(q)}"${hasActiveFilters(filters) ? ' with those filters' : ''}.</strong></p>
+					<p style="margin:0">${
+						hasActiveFilters(filters)
+							? 'Try removing a filter — an age filter in particular hides anything whose label doesn\'t state a minimum age.'
+							: 'Try describing the symptom more plainly — "sore throat", "stuffy nose", "can\'t sleep" — or <a href="/browse">browse the medicine catalog</a>. If you\'re not sure what\'s wrong, a pharmacist is the right person to ask.'
+					}</p>
+				</div>`;
+
+		results.innerHTML =
+			(force && emergencies.length ? renderFlags(emergencies) : '') + renderFlags(urgent) + header + body;
+
+		// The page deliberately never scrolls itself. Symptom chips and filters
+		// live below the results, so auto-scrolling yanked people away from the
+		// controls they were still using after every single click.
+	}
+
+	/** Warnings triggered by the filters rather than by the words typed. */
+	function filterDrivenFlags() {
+		if (!filters.age || !CHILD_AGE_BANDS.includes(filters.age)) return [];
+		const flag = RED_FLAGS.find((f: any) => f.id === 'child-dosing');
+		return flag ? [flag] : [];
+	}
+
+	function renderFilterSummary() {
+		if (!hasActiveFilters(filters)) return '';
+		const parts: string[] = [];
+		if (filters.age) parts.push(filterLabel('age', filters.age));
+		for (const r of filters.routes) parts.push(filterLabel('routes', r));
+		for (const p of filters.preferences) parts.push(filterLabel('preferences', p));
+		return `<p class="filter-summary">Narrowed to: <strong>${escapeHtml(parts.join(' · '))}</strong>
+			<button type="button" id="clear-filters">Remove filters</button></p>`;
+	}
+
+	/** Filters selected but nothing typed - show what fits, most common first. */
+	function renderFilterOnly() {
+		const pool = filterIndex(index!, filters);
+		const ranked = rankByPopularity(pool).slice(0, 24);
+		const header = `<div class="results-head">
+				<h2>Medicines that fit</h2>
+				<span class="results-count">${pool.length} match${pool.length === 1 ? '' : 'es'}</span>
+			</div>`;
+		const body = ranked.length
+			? renderFilterSummary() + renderCards(ranked)
+			: `<div class="empty-state"><p style="margin:0">Nothing in the catalog matches every one of
+				those filters. Try removing one.</p></div>`;
+		results.innerHTML = renderFlags(filterDrivenFlags()) + header + body;
+	}
+
+	/* ------------------------------------------------- multi-select symptoms */
+
+	// Symptoms are selected by putting their wording in the search box, and a
+	// chip looks pressed when its wording is present. Keeping the input as the
+	// single source of truth means typing and clicking can't drift apart.
+
+	const chips = [...document.querySelectorAll<HTMLButtonElement>('.chip[data-q]')];
+	const selectionBar = document.getElementById('selection-bar') as HTMLElement;
+	const selectionSummary = document.getElementById('selection-summary') as HTMLElement;
+	const clearAll = document.getElementById('clear-all') as HTMLButtonElement;
+
+	const norm = (s: string) =>
+		String(s ?? '')
+			.toLowerCase()
+			.replace(/['’]/g, '')
+			.replace(/[^a-z0-9]+/g, ' ')
+			.replace(/\s+/g, ' ')
+			.trim();
+
+	const isSelected = (phrase: string, value: string) => {
+		const p = norm(phrase);
+		return p !== '' && ` ${norm(value)} `.includes(` ${p} `);
+	};
+
+	function addPhrase(value: string, phrase: string) {
+		const base = value.trim().replace(/[,\s]+$/, '');
+		return base ? `${base}, ${phrase}` : phrase;
+	}
+
+	function removePhrase(value: string, phrase: string) {
+		const target = norm(phrase);
+		// Preferred path: the phrase is its own comma-separated item.
+		const parts = value.split(',').map((p) => p.trim()).filter(Boolean);
+		const kept = parts.filter((p) => norm(p) !== target);
+		if (kept.length !== parts.length) return kept.join(', ');
+
+		// Otherwise it's embedded in free text the user typed - cut it out.
+		const escaped = phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s+');
+		return value
+			.replace(new RegExp(escaped, 'ig'), ' ')
+			.replace(/\s*,\s*,/g, ',')
+			.replace(/\s{2,}/g, ' ')
+			.replace(/^[,\s]+|[,\s]+$/g, '')
+			.trim();
+	}
+
+	function syncChips() {
+		const value = input.value;
+		const chosen: string[] = [];
+		for (const chip of chips) {
+			const phrase = chip.dataset.q ?? '';
+			const on = isSelected(phrase, value);
+			chip.setAttribute('aria-pressed', String(on));
+			// Both a quick pick and a full symptom chip can carry the same
+			// wording; only name it once in the summary.
+			if (on && !chosen.some((c) => norm(c) === norm(phrase))) chosen.push(phrase);
+		}
+
+		const hasText = value.trim() !== '';
+		selectionBar.hidden = !hasText && !hasActiveFilters(filters);
+		selectionSummary.textContent = chosen.length
+			? `${chosen.length} symptom${chosen.length === 1 ? '' : 's'} selected: ${chosen.join(', ')}`
+			: hasText
+				? 'Searching for what you typed'
+				: 'Filters applied';
+	}
+
+	for (const chip of chips) {
+		chip.addEventListener('click', () => {
+			const phrase = chip.dataset.q ?? '';
+			input.value = isSelected(phrase, input.value)
+				? removePhrase(input.value, phrase)
+				: addPhrase(input.value, phrase);
+			syncChips();
+			clearTimeout(debounce);
+			runKeepingPlace(chip, input.value);
+		});
+	}
+
+	clearAll.addEventListener('click', () => {
+		input.value = '';
+		resetFilters();
+		syncChips();
+		clearTimeout(debounce);
+		run('');
+		input.focus();
+	});
+
+	/* ------------------------------------------------------------- filters */
+
+	const filterChips = [...document.querySelectorAll<HTMLButtonElement>('.chip--filter')];
+
+	function syncFilterChips() {
+		for (const chip of filterChips) {
+			const kind = chip.dataset.filter!;
+			const value = chip.dataset.value!;
+			const on =
+				kind === 'age'
+					? filters.age === value
+					: (filters[kind as 'routes' | 'preferences'] ?? []).includes(value);
+			chip.setAttribute('aria-pressed', String(on));
+		}
+	}
+
+	function resetFilters() {
+		filters.age = null;
+		filters.routes = [];
+		filters.preferences = [];
+		syncFilterChips();
+	}
+
+	for (const chip of filterChips) {
+		chip.addEventListener('click', () => {
+			const kind = chip.dataset.filter!;
+			const value = chip.dataset.value!;
+
+			if (kind === 'age') {
+				// One age at a time - a person has exactly one.
+				filters.age = filters.age === value ? null : value;
+			} else {
+				const list = filters[kind as 'routes' | 'preferences'];
+				const at = list.indexOf(value);
+				if (at === -1) list.push(value);
+				else list.splice(at, 1);
+			}
+
+			syncFilterChips();
+			clearTimeout(debounce);
+			runKeepingPlace(chip, input.value);
+		});
+	}
+
+	// Rendered inside the results, so it has to be delegated.
+	results.addEventListener('click', (event) => {
+		const target = event.target as HTMLElement;
+		if (target?.id === 'clear-filters') {
+			resetFilters();
+			clearTimeout(debounce);
+			run(input.value);
+		}
+	});
+
+	/* -------------------------------------------------------- text entry */
+
+	let debounce: number;
+	input.addEventListener('input', () => {
+		clearTimeout(debounce);
+		syncChips();
+		const value = input.value;
+		debounce = window.setTimeout(() => run(value), 220);
+	});
+
+	form.addEventListener('submit', (e) => {
+		e.preventDefault();
+		clearTimeout(debounce);
+		run(input.value);
+	});
+
+	// Support /?q=headache and links from detail pages.
+	const initial = new URLSearchParams(location.search).get('q');
+	if (initial) {
+		input.value = initial;
+		run(initial);
+	}
+	syncChips();
+	syncFilterChips();
+</script>

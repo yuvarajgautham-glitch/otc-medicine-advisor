@@ -49,7 +49,7 @@
 		],
 		"minAgeYears": null,
 		"drowsy": null,
-		"labelCount": 1949,
+		"labelCount": 1950,
 		"manufacturer": "9055-7588 Quebec Inc. (Attitude)",
 		"ndc": "61649-260",
 		"splSetId": "00283894-ddc6-0faa-e063-6394a90ae47c",
@@ -111,7 +111,7 @@
 		],
 		"minAgeYears": 2,
 		"drowsy": null,
-		"labelCount": 1008,
+		"labelCount": 1009,
 		"manufacturer": "Medtech Products Inc.",
 		"ndc": "63029-597",
 		"splSetId": "0405a167-cfcf-4607-a34f-87b1ca3f87b1",
@@ -173,7 +173,7 @@
 		],
 		"minAgeYears": 2,
 		"drowsy": null,
-		"labelCount": 983,
+		"labelCount": 984,
 		"manufacturer": "Amazon.com Services LLC",
 		"ndc": "72288-300",
 		"splSetId": "00146b91-008d-4b16-95b0-6077f98821be",
@@ -236,7 +236,7 @@
 		],
 		"minAgeYears": 2,
 		"drowsy": null,
-		"labelCount": 905,
+		"labelCount": 907,
 		"manufacturer": "Lead Chemical Co., Ltd.",
 		"ndc": "62168-0853",
 		"splSetId": "03d36a89-d055-4cff-aa9f-f8de25c57f77",
@@ -260,10 +260,10 @@
 			"Antiseptic",
 			"Klean Freak",
 			"Ecolab Inc.",
+			"Giant Eagle",
 			"Foaming Hand",
 			"Antibacterial",
-			"Bzk Towelette",
-			"Antiseptic Wipe"
+			"Bzk Towelette"
 		],
 		"sourceNames": [
 			"BENZALKONIUM CHLORIDE",
@@ -292,7 +292,7 @@
 		],
 		"minAgeYears": 2,
 		"drowsy": null,
-		"labelCount": 843,
+		"labelCount": 846,
 		"manufacturer": "Innocore Sales & Marketing Inc",
 		"ndc": "70924-005",
 		"splSetId": "00ccdb15-7db9-0102-e063-6294a90a3ee3",
@@ -356,7 +356,7 @@
 		],
 		"minAgeYears": 2,
 		"drowsy": null,
-		"labelCount": 732,
+		"labelCount": 733,
 		"manufacturer": "American Sales Company",
 		"ndc": "41520-604",
 		"splSetId": "006adf23-21ab-4a4e-aae9-c4e587777165",
@@ -472,7 +472,7 @@
 		],
 		"minAgeYears": 18,
 		"drowsy": null,
-		"labelCount": 506,
+		"labelCount": 507,
 		"manufacturer": "Publix Super Markets Inc",
 		"ndc": "56062-671",
 		"splSetId": "00b40bb3-3785-4a53-804e-633795e87f71",
@@ -772,7 +772,7 @@
 		],
 		"minAgeYears": 12,
 		"drowsy": null,
-		"labelCount": 384,
+		"labelCount": 385,
 		"manufacturer": "Bayer HealthCare LLC.",
 		"ndc": "0280-2100",
 		"splSetId": "075b103e-0bb4-4b7a-ac0e-5645bcbd0a07",
@@ -941,7 +941,7 @@
 		],
 		"minAgeYears": 6,
 		"drowsy": null,
-		"labelCount": 303,
+		"labelCount": 304,
 		"manufacturer": "Rejoice International Inc.",
 		"ndc": "57337-027",
 		"splSetId": "08330f44-45e2-47cb-bd2e-cef15ba61aee",
@@ -1142,9 +1142,9 @@
 			"Good Sense Gas Relief",
 			"Publix Extra Strength",
 			"Basic Care Gas Relief",
+			"Amazon Extra Strength",
 			"Pepto Gas Plus Bloating",
-			"Anti-Gas Ultra Strength",
-			"Infants Gas Relief Drops"
+			"Anti-Gas Ultra Strength"
 		],
 		"sourceNames": [
 			"SIMETHICONE"
@@ -1171,7 +1171,7 @@
 		],
 		"minAgeYears": 12,
 		"drowsy": null,
-		"labelCount": 239,
+		"labelCount": 240,
 		"manufacturer": "WALGREEN CO.",
 		"ndc": "0363-0790",
 		"splSetId": "05d2a37f-f47d-40e6-a799-120d846bf5d6",
@@ -1238,61 +1238,6 @@
 		"effectiveTime": "20250908"
 	},
 	{
-		"slug": "minoxidil",
-		"genericName": "Minoxidil",
-		"brandNames": [
-			"Hair Serum",
-			"Johnson Foam",
-			"5% Minoxidil(For Men)",
-			"Soti Hair Growth Serum",
-			"Hair Regrowth Treatment",
-			"Melao Hair Growth Mousse",
-			"Womens Rogaine Unscented",
-			"5%Minoxidil Topical Foam",
-			"Elevate Hair Growth Serum",
-			"Regenivade Hair Growth Foam",
-			"Hers Hair Regrowth Treatment",
-			"Hims Hair Regrowth Treatment",
-			"5%Minoxidil Hair Growth Serum",
-			"Equate Hair Regrowth Treatment",
-			"Hair Regen Hair Growth Treatment",
-			"Hair-Regen Hair Growth Treatment",
-			"Elevate Hair Regrowth Treatment 5",
-			"Basic Care Hair Regrowth Treatment"
-		],
-		"sourceNames": [
-			"MINOXIDIL",
-			"MINOXIDIL 5%"
-		],
-		"purpose": "Fight primary cause of hair loss in men. Anti hair loss to help increase hair densityand volume",
-		"uses": "Fight primary cause of hair loss in men.Anti hair lossto help increase hair density and volume do not apply on other parts of the body. avoid contactwith eyes.In case of accidental contactrinse eyes with large amounts of cool tap water. some people have experienced changes in hair colorand/or texture",
-		"directions": "1.PREP HANDSWITH COLD WATERRinse Your Fingers In Cold WaterAnd DryThem.note:Foam Will MeltOn Contact With Warm Surfaces. 2.OPEN CHILDRESISTANT CAP Be Sure To Align Arrow On The capWith Arrow On Blue Ring. Tilt CapBack And Pull Off. 3.DISPENSEVERTICALLYONTOACOLD SURFACE Hold The Can Straight UpsideDown.lf You Hold Thecan At AnAngle, Foam May Not DispenseProperly.Press Nozzle To DispenseHalfACapful Of Foam Onto ColdSurface(e.g.dish.or Cold Hands). 4.APPLYTOSCALP.NOT HAIR Part Your Hair To Expose Hair LossArea.Massage Foam Into ScalpNot Hair, Repeat UntilAll HairLossAreas Have Been Covered. 5.CLOSE CAP AND WASHHANDSsnap cap back into place be surearrows do not line up, so cap remainschild resistant, wash hands and anysurface thoroughly afteruse",
-		"warnings": "For external use only For use by men only. Extremely Flammable Avoid fire, flame, or smoking during and immediatelyfollowing application.",
-		"doNotUse": "",
-		"askDoctor": "",
-		"askDoctorOrPharmacist": "",
-		"whenUsing": "",
-		"stopUse": "",
-		"pregnancy": "",
-		"keepOutOfReach": "Ifswallowed,get medical help or contact a PoisonControlCenter rightaway",
-		"storage": "Store at controlledroom temperature20 ℃ to 25 ℃68°to 77 F).Contentsunder pressure.Do not puncture orincinerate container. Do not expose toheat or store at temperatures above120F(49℃)",
-		"activeIngredient": "MINOXIDIL 5% FINASTERIDE 0.1%",
-		"inactiveIngredient": "ALCOHOL GLYCERIN WHATER CETYL PEG/PPG-10/1 DIMETHICONE (HLB 5) UBIQUINOL ZINC PIDOLATE BUTYLATED HYDROXYTOLUENE EDETATE DISODIUM LEVOMENTHOL Poloxzam POLYSORBATE 80",
-		"routes": [
-			"Topical"
-		],
-		"symptoms": [
-			"hair-loss"
-		],
-		"minAgeYears": 18,
-		"drowsy": null,
-		"labelCount": 225,
-		"manufacturer": "JOHNSON BIOPHARMACEUTICAL INC.",
-		"ndc": "84539-001",
-		"splSetId": "1d44a75c-c940-680c-e063-6394a90a5839",
-		"effectiveTime": "20260802"
-	},
-	{
 		"slug": "lidocaine-hydrochloride",
 		"genericName": "Lidocaine Hydrochloride",
 		"brandNames": [
@@ -1344,11 +1289,123 @@
 		],
 		"minAgeYears": 2,
 		"drowsy": null,
-		"labelCount": 225,
+		"labelCount": 227,
 		"manufacturer": "SCALP TECH INC",
 		"ndc": "82617-105",
 		"splSetId": "184be4cc-b0b9-7882-e063-6394a90a8e7e",
 		"effectiveTime": "20240525"
+	},
+	{
+		"slug": "minoxidil",
+		"genericName": "Minoxidil",
+		"brandNames": [
+			"Hair Serum",
+			"Johnson Foam",
+			"5% Minoxidil(For Men)",
+			"Soti Hair Growth Serum",
+			"Hair Regrowth Treatment",
+			"Melao Hair Growth Mousse",
+			"Womens Rogaine Unscented",
+			"5%Minoxidil Topical Foam",
+			"Elevate Hair Growth Serum",
+			"Regenivade Hair Growth Foam",
+			"Hers Hair Regrowth Treatment",
+			"Hims Hair Regrowth Treatment",
+			"5%Minoxidil Hair Growth Serum",
+			"Equate Hair Regrowth Treatment",
+			"Hair Regen Hair Growth Treatment",
+			"Hair-Regen Hair Growth Treatment",
+			"Elevate Hair Regrowth Treatment 5",
+			"Basic Care Hair Regrowth Treatment"
+		],
+		"sourceNames": [
+			"MINOXIDIL",
+			"MINOXIDIL 5%"
+		],
+		"purpose": "Fight primary cause of hair loss in men. Anti hair loss to help increase hair densityand volume",
+		"uses": "Fight primary cause of hair loss in men.Anti hair lossto help increase hair density and volume do not apply on other parts of the body. avoid contactwith eyes.In case of accidental contactrinse eyes with large amounts of cool tap water. some people have experienced changes in hair colorand/or texture",
+		"directions": "1.PREP HANDSWITH COLD WATERRinse Your Fingers In Cold WaterAnd DryThem.note:Foam Will MeltOn Contact With Warm Surfaces. 2.OPEN CHILDRESISTANT CAP Be Sure To Align Arrow On The capWith Arrow On Blue Ring. Tilt CapBack And Pull Off. 3.DISPENSEVERTICALLYONTOACOLD SURFACE Hold The Can Straight UpsideDown.lf You Hold Thecan At AnAngle, Foam May Not DispenseProperly.Press Nozzle To DispenseHalfACapful Of Foam Onto ColdSurface(e.g.dish.or Cold Hands). 4.APPLYTOSCALP.NOT HAIR Part Your Hair To Expose Hair LossArea.Massage Foam Into ScalpNot Hair, Repeat UntilAll HairLossAreas Have Been Covered. 5.CLOSE CAP AND WASHHANDSsnap cap back into place be surearrows do not line up, so cap remainschild resistant, wash hands and anysurface thoroughly afteruse",
+		"warnings": "For external use only For use by men only. Extremely Flammable Avoid fire, flame, or smoking during and immediatelyfollowing application.",
+		"doNotUse": "",
+		"askDoctor": "",
+		"askDoctorOrPharmacist": "",
+		"whenUsing": "",
+		"stopUse": "",
+		"pregnancy": "",
+		"keepOutOfReach": "Ifswallowed,get medical help or contact a PoisonControlCenter rightaway",
+		"storage": "Store at controlledroom temperature20 ℃ to 25 ℃68°to 77 F).Contentsunder pressure.Do not puncture orincinerate container. Do not expose toheat or store at temperatures above120F(49℃)",
+		"activeIngredient": "MINOXIDIL 5% FINASTERIDE 0.1%",
+		"inactiveIngredient": "ALCOHOL GLYCERIN WHATER CETYL PEG/PPG-10/1 DIMETHICONE (HLB 5) UBIQUINOL ZINC PIDOLATE BUTYLATED HYDROXYTOLUENE EDETATE DISODIUM LEVOMENTHOL Poloxzam POLYSORBATE 80",
+		"routes": [
+			"Topical"
+		],
+		"symptoms": [
+			"hair-loss"
+		],
+		"minAgeYears": 18,
+		"drowsy": null,
+		"labelCount": 226,
+		"manufacturer": "JOHNSON BIOPHARMACEUTICAL INC.",
+		"ndc": "84539-001",
+		"splSetId": "1d44a75c-c940-680c-e063-6394a90a5839",
+		"effectiveTime": "20260802"
+	},
+	{
+		"slug": "miconazole-nitrate",
+		"genericName": "Miconazole Nitrate",
+		"brandNames": [
+			"Azolen",
+			"Desenex",
+			"Medline",
+			"Conazol",
+			"Jock Itch",
+			"Antifungal",
+			"Anti-Fungal",
+			"Athletes Foot",
+			"Antifungal Body",
+			"Baza Antifungal",
+			"Jock Itch Powder",
+			"Antifungal Cream",
+			"Dermachange Jock",
+			"Remedy Antifungal",
+			"Zeasorb Jock Itch",
+			"Antifungal Powder",
+			"Procure Antifungal",
+			"Anti-Fungal Powder"
+		],
+		"sourceNames": [
+			"MICONAZOLE NITRATE",
+			"MICONAZOLE NITRATE 2%"
+		],
+		"purpose": "Antifungal",
+		"uses": "for the treatment of most athlete's foot (tinea pedis), jock itch (tinea cruris), ringworm (tinea corporis) relieves most itching, scaling, cracking, burning, redness, soreness, irritation, discomfort and chafing associated with jock itch",
+		"directions": "Clean the affected area and dry thoroughly Apply a thin layer of powder over affected area twice daily (morning and night) or as directed by a doctor Supervise children in the use of this product For athlete's foot, pay special attention between spaces in toes; wear well-fitting, ventilated shoes, and change shoes and socks at least once daily For athlete's foot and ringworm, use daily for 4 weeks For jock itch, use daily for 2 weeks If condition persists longer, consult a doctor This product is not effective on the scalp or nails.",
+		"warnings": "For external use only Do not use on children under 2 years of age unless directed by a doctor on scalp or nails When using this product avoid contact with the eyes Stop use and ask a doctor if irritation occurs there is no improvement within 4 weeks when used for the treatment of athlete's foot or ringworm there is no improvement within 2 weeks when used for the treatment of jock itch Keep out of reach of children If swallowed, get medical help or contact a Poison Control center right away.",
+		"doNotUse": "on children under 2 years of age unless directed by a doctor on scalp or nails",
+		"askDoctor": "",
+		"askDoctorOrPharmacist": "",
+		"whenUsing": "avoid contact with the eyes",
+		"stopUse": "if irritation occurs there is no improvement within 4 weeks when used for the treatment of athlete's foot or ringworm there is no improvement within 2 weeks when used for the treatment of jock itch",
+		"pregnancy": "",
+		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control center right away.",
+		"storage": "protect from freezing. Avoid excessive heat. do not use if package is damaged keep dry",
+		"activeIngredient": "Miconazole nitrate 2.0% w/w",
+		"inactiveIngredient": "Aphanizomenon Flos-Aquae (Algae) Extract, Camellia Sinensis (Green Tea) Leaf Extract, Caprylic/Capric Triglycerides, 7-Dehydrocholesterol, Dipotassium Glycyrrhizate, Ethylene Brassylate, Eugenia Caryophyllus (Clove) Flower Extract, Fragrance, Glycerin, Hydrolyzed Soy Protein, Phospholipids, Silica, Sodium Benzoate, Tocopheryl Acetate, Water, Yeast Ferment Extract, Zea Mays (Corn) Oil, Zea Mays (Corn) Starch",
+		"routes": [
+			"Topical",
+			"Vaginal"
+		],
+		"symptoms": [
+			"itching-rash",
+			"fungal-skin"
+		],
+		"minAgeYears": 2,
+		"drowsy": null,
+		"labelCount": 223,
+		"manufacturer": "Medline Industries, LP",
+		"ndc": "53329-169",
+		"splSetId": "021b4a31-d7f6-4921-b4b1-cbe832eecd93",
+		"effectiveTime": "20251029"
 	},
 	{
 		"slug": "naproxen-sodium",
@@ -1413,63 +1470,6 @@
 		"effectiveTime": "20251104"
 	},
 	{
-		"slug": "miconazole-nitrate",
-		"genericName": "Miconazole Nitrate",
-		"brandNames": [
-			"Azolen",
-			"Desenex",
-			"Medline",
-			"Conazol",
-			"Jock Itch",
-			"Antifungal",
-			"Anti-Fungal",
-			"Athletes Foot",
-			"Antifungal Body",
-			"Baza Antifungal",
-			"Jock Itch Powder",
-			"Antifungal Cream",
-			"Dermachange Jock",
-			"Remedy Antifungal",
-			"Zeasorb Jock Itch",
-			"Antifungal Powder",
-			"Procure Antifungal",
-			"Anti-Fungal Powder"
-		],
-		"sourceNames": [
-			"MICONAZOLE NITRATE",
-			"MICONAZOLE NITRATE 2%"
-		],
-		"purpose": "Antifungal",
-		"uses": "for the treatment of most athlete's foot (tinea pedis), jock itch (tinea cruris), ringworm (tinea corporis) relieves most itching, scaling, cracking, burning, redness, soreness, irritation, discomfort and chafing associated with jock itch",
-		"directions": "Clean the affected area and dry thoroughly Apply a thin layer of powder over affected area twice daily (morning and night) or as directed by a doctor Supervise children in the use of this product For athlete's foot, pay special attention between spaces in toes; wear well-fitting, ventilated shoes, and change shoes and socks at least once daily For athlete's foot and ringworm, use daily for 4 weeks For jock itch, use daily for 2 weeks If condition persists longer, consult a doctor This product is not effective on the scalp or nails.",
-		"warnings": "For external use only Do not use on children under 2 years of age unless directed by a doctor on scalp or nails When using this product avoid contact with the eyes Stop use and ask a doctor if irritation occurs there is no improvement within 4 weeks when used for the treatment of athlete's foot or ringworm there is no improvement within 2 weeks when used for the treatment of jock itch Keep out of reach of children If swallowed, get medical help or contact a Poison Control center right away.",
-		"doNotUse": "on children under 2 years of age unless directed by a doctor on scalp or nails",
-		"askDoctor": "",
-		"askDoctorOrPharmacist": "",
-		"whenUsing": "avoid contact with the eyes",
-		"stopUse": "if irritation occurs there is no improvement within 4 weeks when used for the treatment of athlete's foot or ringworm there is no improvement within 2 weeks when used for the treatment of jock itch",
-		"pregnancy": "",
-		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control center right away.",
-		"storage": "protect from freezing. Avoid excessive heat. do not use if package is damaged keep dry",
-		"activeIngredient": "Miconazole nitrate 2.0% w/w",
-		"inactiveIngredient": "Aphanizomenon Flos-Aquae (Algae) Extract, Camellia Sinensis (Green Tea) Leaf Extract, Caprylic/Capric Triglycerides, 7-Dehydrocholesterol, Dipotassium Glycyrrhizate, Ethylene Brassylate, Eugenia Caryophyllus (Clove) Flower Extract, Fragrance, Glycerin, Hydrolyzed Soy Protein, Phospholipids, Silica, Sodium Benzoate, Tocopheryl Acetate, Water, Yeast Ferment Extract, Zea Mays (Corn) Oil, Zea Mays (Corn) Starch",
-		"routes": [
-			"Topical",
-			"Vaginal"
-		],
-		"symptoms": [
-			"itching-rash",
-			"fungal-skin"
-		],
-		"minAgeYears": 2,
-		"drowsy": null,
-		"labelCount": 222,
-		"manufacturer": "Medline Industries, LP",
-		"ndc": "53329-169",
-		"splSetId": "021b4a31-d7f6-4921-b4b1-cbe832eecd93",
-		"effectiveTime": "20251029"
-	},
-	{
 		"slug": "chloroxylenol",
 		"genericName": "Chloroxylenol",
 		"brandNames": [
@@ -1521,63 +1521,6 @@
 		"ndc": "59900-128",
 		"splSetId": "102c40f9-c37b-4680-b3a5-1870188e5b7f",
 		"effectiveTime": "20241205"
-	},
-	{
-		"slug": "povidone-iodine",
-		"genericName": "Povidone-Iodine",
-		"brandNames": [
-			"Sterile",
-			"Medline",
-			"Betadine",
-			"Aplicare",
-			"Pvp Iodine",
-			"Bd E-Z Scrub",
-			"Medichoice Pvp",
-			"Povidone Iodine",
-			"Betadine Gargle",
-			"Medpride Preppads",
-			"Betadine Solution",
-			"Pvp Scrub Solution",
-			"Medichoice Pvp Prep",
-			"Povidone Iodine 10%",
-			"Cvs Povidone Iodine",
-			"Ddm Povidone Iodine",
-			"Heb Povidone Iodine",
-			"Medichoice Pvp Scrub"
-		],
-		"sourceNames": [
-			"POVIDONE-IODINE",
-			"POVIDONE IODINE",
-			"POVIDONE IODINE 10%"
-		],
-		"purpose": "Antiseptic",
-		"uses": "For preparation of the skin prior to surgery and helps reduce bacteria that can potentially cause skin infection. Topical first aid antiseptic to help reduce the risk of skin infection in minor cuts, scrapes, and burns.",
-		"directions": "For preparation prior to surgery Clean the treatment area Remove swab by stick Apply to the operative site prior to surgery. Clean the treatment area Apply a small amount on the treatment area 1-3 times daily May be covered with a sterile bandage Let dry before covering. For use as a first aid antiseptic",
-		"warnings": "For external use only. Do not use in the eyes on individuals who are allergic or sensitive to iodine over large areas of the body as a first aid antiseptic longer than one week unless directed by a doctor. Consult a doctor in case of deep or puncture wounds, animal bites, or serious burns. Stop use and consult a doctor if irritation or redness develops if the condition persists or gets worse infection occurs. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
-		"doNotUse": "in the eyes on individuals who are allergic or sensitive to iodine over large areas of the body as a first aid antiseptic longer than one week unless directed by a doctor.",
-		"askDoctor": "Consult a doctor in case of deep or puncture wounds, animal bites, or serious burns.",
-		"askDoctorOrPharmacist": "",
-		"whenUsing": "",
-		"stopUse": "and consult a doctor if irritation or redness develops if the condition persists or gets worse infection occurs.",
-		"pregnancy": "",
-		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control Center right away.",
-		"storage": "",
-		"activeIngredient": "Povidone Iodine USP,10% w/w Purpose Antiseptic",
-		"inactiveIngredient": "Citric Acid, Alkyl Glucoside, Hydroxyethyl Cellulose, Nonoxyno-10, Glycerine, Sodium Hydroxide, Potassium Iodide, Purified Water",
-		"routes": [
-			"Topical",
-			"Cutaneous"
-		],
-		"symptoms": [
-			"cuts-scrapes"
-		],
-		"minAgeYears": 12,
-		"drowsy": null,
-		"labelCount": 206,
-		"manufacturer": "O&M HALYARD, INC.",
-		"ndc": "39892-0811",
-		"splSetId": "04e9b3e7-2505-48c4-96a5-eb8eb2d1625e",
-		"effectiveTime": "20251009"
 	},
 	{
 		"slug": "acetaminophen-dextromethorphan-hydrobromide-doxylamine-succinate",
@@ -1640,11 +1583,68 @@
 		],
 		"minAgeYears": 4,
 		"drowsy": true,
-		"labelCount": 206,
+		"labelCount": 208,
 		"manufacturer": "Genexa Inc.",
 		"ndc": "69676-0095",
 		"splSetId": "190c7eaf-dcd4-d314-e063-6294a90a6f33",
 		"effectiveTime": "20251230"
+	},
+	{
+		"slug": "povidone-iodine",
+		"genericName": "Povidone-Iodine",
+		"brandNames": [
+			"Sterile",
+			"Medline",
+			"Betadine",
+			"Aplicare",
+			"Pvp Iodine",
+			"Bd E-Z Scrub",
+			"Medichoice Pvp",
+			"Povidone Iodine",
+			"Betadine Gargle",
+			"Medpride Preppads",
+			"Betadine Solution",
+			"Pvp Scrub Solution",
+			"Medichoice Pvp Prep",
+			"Povidone Iodine 10%",
+			"Cvs Povidone Iodine",
+			"Ddm Povidone Iodine",
+			"Heb Povidone Iodine",
+			"Medichoice Pvp Scrub"
+		],
+		"sourceNames": [
+			"POVIDONE-IODINE",
+			"POVIDONE IODINE",
+			"POVIDONE IODINE 10%"
+		],
+		"purpose": "Antiseptic",
+		"uses": "For preparation of the skin prior to surgery and helps reduce bacteria that can potentially cause skin infection. Topical first aid antiseptic to help reduce the risk of skin infection in minor cuts, scrapes, and burns.",
+		"directions": "For preparation prior to surgery Clean the treatment area Remove swab by stick Apply to the operative site prior to surgery. Clean the treatment area Apply a small amount on the treatment area 1-3 times daily May be covered with a sterile bandage Let dry before covering. For use as a first aid antiseptic",
+		"warnings": "For external use only. Do not use in the eyes on individuals who are allergic or sensitive to iodine over large areas of the body as a first aid antiseptic longer than one week unless directed by a doctor. Consult a doctor in case of deep or puncture wounds, animal bites, or serious burns. Stop use and consult a doctor if irritation or redness develops if the condition persists or gets worse infection occurs. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
+		"doNotUse": "in the eyes on individuals who are allergic or sensitive to iodine over large areas of the body as a first aid antiseptic longer than one week unless directed by a doctor.",
+		"askDoctor": "Consult a doctor in case of deep or puncture wounds, animal bites, or serious burns.",
+		"askDoctorOrPharmacist": "",
+		"whenUsing": "",
+		"stopUse": "and consult a doctor if irritation or redness develops if the condition persists or gets worse infection occurs.",
+		"pregnancy": "",
+		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control Center right away.",
+		"storage": "",
+		"activeIngredient": "Povidone Iodine USP,10% w/w Purpose Antiseptic",
+		"inactiveIngredient": "Citric Acid, Alkyl Glucoside, Hydroxyethyl Cellulose, Nonoxyno-10, Glycerine, Sodium Hydroxide, Potassium Iodide, Purified Water",
+		"routes": [
+			"Topical",
+			"Cutaneous"
+		],
+		"symptoms": [
+			"cuts-scrapes"
+		],
+		"minAgeYears": 12,
+		"drowsy": null,
+		"labelCount": 206,
+		"manufacturer": "O&M HALYARD, INC.",
+		"ndc": "39892-0811",
+		"splSetId": "04e9b3e7-2505-48c4-96a5-eb8eb2d1625e",
+		"effectiveTime": "20251009"
 	},
 	{
 		"slug": "tolnaftate",
@@ -1697,7 +1697,7 @@
 		],
 		"minAgeYears": 2,
 		"drowsy": null,
-		"labelCount": 201,
+		"labelCount": 202,
 		"manufacturer": "Trifluent Pharma LLC",
 		"ndc": "73352-561",
 		"splSetId": "12b53c2a-b073-43db-88d9-ede8300626aa",
@@ -1721,10 +1721,10 @@
 			"Topcare Stool Softener",
 			"Stool Softener Laxative",
 			"Dulcolax Stool Softener",
+			"Mirasoft Stool Softener",
 			"Fevia Constipation Control",
 			"Dulcolax Pink Stool Softener",
-			"Good Neighbor Stool Softener",
-			"Stool Softener Extra Strength"
+			"Good Neighbor Stool Softener"
 		],
 		"sourceNames": [
 			"DOCUSATE SODIUM"
@@ -1752,7 +1752,7 @@
 		],
 		"minAgeYears": 2,
 		"drowsy": null,
-		"labelCount": 198,
+		"labelCount": 199,
 		"manufacturer": "National Vitamin Company",
 		"ndc": "54629-601",
 		"splSetId": "0c66642c-82cb-42cd-82bb-5f95852cc5d1",
@@ -2108,7 +2108,7 @@
 		],
 		"minAgeYears": 2,
 		"drowsy": null,
-		"labelCount": 157,
+		"labelCount": 154,
 		"manufacturer": "Borden Company (Private) Limited",
 		"ndc": "43405-012",
 		"splSetId": "091451fb-e30a-0012-e063-6394a90a3ba8",
@@ -2469,6 +2469,62 @@
 		"effectiveTime": "20250930"
 	},
 	{
+		"slug": "petrolatum",
+		"genericName": "Petrolatum",
+		"brandNames": [
+			"Cvs",
+			"Healing",
+			"A And D",
+			"Curefini",
+			"Baza Clear",
+			"Vitamin A D",
+			"Petroleum Jelly",
+			"Vitamin A And D",
+			"Skin Protectant",
+			"Dry Skin Healing",
+			"Aquaphor Healing",
+			"Critic Aid Clear",
+			"Advanced Healing",
+			"Secura Protective",
+			"Healing Cream 3oz",
+			"Aquaphor Original",
+			"Careall Petroleum",
+			"Healing For Babies"
+		],
+		"sourceNames": [
+			"PETROLATUM"
+		],
+		"purpose": "Skin Protectant",
+		"uses": "Helps treat and prevent diaper rash Helps seal out wetness Temporarily protects minor * cuts * scrapes * burns Temporarily helps protect and relieve chapped and cracked skin or lips Helps prevent and protect chafed skin or minor skin irritations associated with diaper rash With each diaper change, especially at bedtime when exposure to wet diapers may be prolonged.",
+		"directions": "Change wet and soiled diapers promptly. Cleanse the diaper area and allow to dry. Apply as needed.",
+		"warnings": "For external use only. When using this product do not get into eyes. Stop use and ask a doctor if condition worsens symptoms last more than 7 days or clear up and occur again in a few days. Do not use on deep puncture wounds animal bites serious burns. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
+		"doNotUse": "on deep puncture wounds animal bites serious burns.",
+		"askDoctor": "",
+		"askDoctorOrPharmacist": "",
+		"whenUsing": "do not get into eyes.",
+		"stopUse": "if condition worsens symptoms last more than 7 days or clear up and occur again in a few days.",
+		"pregnancy": "",
+		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control Center right away.",
+		"storage": "",
+		"activeIngredient": "White Petrolatum (USP, 100% w/w)",
+		"inactiveIngredient": "None",
+		"routes": [
+			"Topical"
+		],
+		"symptoms": [
+			"itching-rash",
+			"dry-skin",
+			"cuts-scrapes"
+		],
+		"minAgeYears": null,
+		"drowsy": null,
+		"labelCount": 136,
+		"manufacturer": "Dukal LLC",
+		"ndc": "65517-2023",
+		"splSetId": "0c6474ed-2343-d5f2-e063-6394a90a30b3",
+		"effectiveTime": "20241112"
+	},
+	{
 		"slug": "acetaminophen-aspirin-caffeine",
 		"genericName": "Acetaminophen, Aspirin, Caffeine",
 		"brandNames": [
@@ -2532,62 +2588,6 @@
 		"ndc": "27854-303",
 		"splSetId": "33b3508e-4caa-4d05-9b15-cb82a2ee2d4d",
 		"effectiveTime": "20240228"
-	},
-	{
-		"slug": "petrolatum",
-		"genericName": "Petrolatum",
-		"brandNames": [
-			"Cvs",
-			"Healing",
-			"A And D",
-			"Curefini",
-			"Baza Clear",
-			"Vitamin A D",
-			"Vitamin A And D",
-			"Petroleum Jelly",
-			"Skin Protectant",
-			"Dry Skin Healing",
-			"Aquaphor Healing",
-			"Critic Aid Clear",
-			"Advanced Healing",
-			"Secura Protective",
-			"Healing Cream 3oz",
-			"Aquaphor Original",
-			"Careall Petroleum",
-			"Healing For Babies"
-		],
-		"sourceNames": [
-			"PETROLATUM"
-		],
-		"purpose": "Skin Protectant",
-		"uses": "Helps treat and prevent diaper rash Helps seal out wetness Temporarily protects minor * cuts * scrapes * burns Temporarily helps protect and relieve chapped and cracked skin or lips Helps prevent and protect chafed skin or minor skin irritations associated with diaper rash With each diaper change, especially at bedtime when exposure to wet diapers may be prolonged.",
-		"directions": "Change wet and soiled diapers promptly. Cleanse the diaper area and allow to dry. Apply as needed.",
-		"warnings": "For external use only. When using this product do not get into eyes. Stop use and ask a doctor if condition worsens symptoms last more than 7 days or clear up and occur again in a few days. Do not use on deep puncture wounds animal bites serious burns. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
-		"doNotUse": "on deep puncture wounds animal bites serious burns.",
-		"askDoctor": "",
-		"askDoctorOrPharmacist": "",
-		"whenUsing": "do not get into eyes.",
-		"stopUse": "if condition worsens symptoms last more than 7 days or clear up and occur again in a few days.",
-		"pregnancy": "",
-		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control Center right away.",
-		"storage": "",
-		"activeIngredient": "White Petrolatum (USP, 100% w/w)",
-		"inactiveIngredient": "None",
-		"routes": [
-			"Topical"
-		],
-		"symptoms": [
-			"itching-rash",
-			"dry-skin",
-			"cuts-scrapes"
-		],
-		"minAgeYears": null,
-		"drowsy": null,
-		"labelCount": 135,
-		"manufacturer": "Dukal LLC",
-		"ndc": "65517-2023",
-		"splSetId": "0c6474ed-2343-d5f2-e063-6394a90a30b3",
-		"effectiveTime": "20241112"
 	},
 	{
 		"slug": "dimethicone",
@@ -2765,7 +2765,6 @@
 			"Laxative",
 			"Proctozone-B",
 			"C-Lax Laxative",
-			"Laxative Women",
 			"Laxative Gentle",
 			"Gentle Laxative",
 			"Dulcolax Laxative",
@@ -2776,7 +2775,8 @@
 			"Extra Gentle Laxative",
 			"Womens Gentle Laxative",
 			"Meijer Gentle Laxative",
-			"Rite-Aid Gentle Laxative"
+			"Rite-Aid Gentle Laxative",
+			"Publix Stimulant Laxative"
 		],
 		"sourceNames": [
 			"BISACODYL"
@@ -2804,7 +2804,7 @@
 		],
 		"minAgeYears": 6,
 		"drowsy": null,
-		"labelCount": 112,
+		"labelCount": 111,
 		"manufacturer": "PUBLIX SUPER MARKETS, INC",
 		"ndc": "41415-116",
 		"splSetId": "02e596a7-b8e5-4f55-9bc6-6d17e0fabda7",
@@ -2975,7 +2975,7 @@
 		],
 		"minAgeYears": 6,
 		"drowsy": null,
-		"labelCount": 104,
+		"labelCount": 105,
 		"manufacturer": "Lupin Pharmaceuticals,Inc.",
 		"ndc": "43386-312",
 		"splSetId": "19672e23-1606-497e-a112-939af33af195",
@@ -3331,6 +3331,62 @@
 		"effectiveTime": "20251205"
 	},
 	{
+		"slug": "magnesium-hydroxide",
+		"genericName": "Magnesium Hydroxide",
+		"brandNames": [
+			"Pedia-Lax",
+			"Gentle Laxative",
+			"Dulcolax Liquid",
+			"Milk Of Magnesia",
+			"Mirafast Soft Chews",
+			"Milk Of Magnesia Mint",
+			"Humco Milk Of Magnesia",
+			"Milk Of Magnesia Cherry",
+			"Mirafast Kids Soft Chews",
+			"Milk Of Magnesia Original",
+			"Milk Of Magnesia Concentrate",
+			"Equate Kids Gentle Laxative Sc",
+			"Childrens Oral Saline Laxative",
+			"Dulcolax Soft Chews Watermelon",
+			"Premier Value Milk Of Magnesia",
+			"Walgreens Smoothlax Soft Chews",
+			"Careone Milk Of Magnesia Cherry",
+			"Dulcolax Soft Chews Mixed Berry"
+		],
+		"sourceNames": [
+			"MAGNESIUM HYDROXIDE"
+		],
+		"purpose": "Saline laxative",
+		"uses": "As an Antacid heartburn upset/sour stomach acid indigestion As a Laxative relieves occasional constipation (irregularity) This product usually produces bowel movement in ½ to 6 hours.",
+		"directions": "As an Antacid do not exceed the maximum recommended daily dose of 20 mL in a 24 hour period shake well before use can be taken with water mL = milliliter adults and children 12 years of age and over 5 mL (1 teaspoonful) children under 12 years of age ask a doctor As a Laxative do not exceed the maximum recommended daily dose in a 24 hour period shake well before use dose may be taken once a day preferably at bedtime, in divided doses, or as directed by a doctor. Drink a full glass (8 oz) of liquid with each dose. mL = milliliter adults and children 12 years and older 15 mL to 30 mL children under 12 years ask a doctor",
+		"warnings": "if you have ever had an allergic reaction to this product or any of its ingredients Ask a doctor before use if you have kidney disease a magnesium-restricted diet stomach pain, nausea, or vomiting a sudden change in bowel habits that lasts over 14 days Ask a doctor or pharmacist before use If you are taking a prescription drug. This product may interact with certain prescription drugs. Stop use and ask a doctor if you have rectal bleeding or no bowel movement after using this product. These could be signs of a serious condition. you need to use a laxative for more than 1 week If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center right away.",
+		"doNotUse": "if you have ever had an allergic reaction to this product or any of its ingredients",
+		"askDoctor": "before use if you have kidney disease a magnesium-restricted diet stomach pain, nausea, or vomiting a sudden change in bowel habits that lasts over 14 days",
+		"askDoctorOrPharmacist": "before use If you are taking a prescription drug. This product may interact with certain prescription drugs.",
+		"whenUsing": "",
+		"stopUse": "if you have rectal bleeding or no bowel movement after using this product. These could be signs of a serious condition. you need to use a laxative for more than 1 week",
+		"pregnancy": ", ask a health professional before use.",
+		"keepOutOfReach": "In case of overdose, get medical help or contact a Poison Control Center right away.",
+		"storage": "each teaspoonful (5 mL) contains: magnesium 1000 mg Sodium Content: 19 mg/10 mL store at room temperature, 20° - 25°C (68° - 77°F). Avoid freezing. Milk of Magnesia Concentrate (white suspension, lemon flavored) is supplied in the following oral dosage form: NDC 0121-0940-10: 10 mL unit dose cup, in a tray of ten cups.",
+		"activeIngredient": "(in each 10 mL) Magnesium hydroxide 2400 mg",
+		"inactiveIngredient": "glycerin, hydroxypropyl methylcellulose, lemon oil, methylparaben, propylene glycol, propylparaben, purified water, sodium citrate dihydrate, sodium saccharin, sorbitol, and sucrose.",
+		"routes": [
+			"Oral"
+		],
+		"symptoms": [
+			"heartburn",
+			"constipation",
+			"upset-stomach"
+		],
+		"minAgeYears": 4,
+		"drowsy": null,
+		"labelCount": 88,
+		"manufacturer": "PAI Holdings, LLC dba PAI Pharma",
+		"ndc": "0121-0940",
+		"splSetId": "2a99a1a8-a830-429f-9cfd-3f29c3d3547c",
+		"effectiveTime": "20241112"
+	},
+	{
 		"slug": "sulfur",
 		"genericName": "Sulfur",
 		"brandNames": [
@@ -3385,62 +3441,6 @@
 		"ndc": "83196-690",
 		"splSetId": "24fa844b-e4ce-46de-a2d6-e9e863888a55",
 		"effectiveTime": "20251121"
-	},
-	{
-		"slug": "magnesium-hydroxide",
-		"genericName": "Magnesium Hydroxide",
-		"brandNames": [
-			"Pedia-Lax",
-			"Gentle Laxative",
-			"Dulcolax Liquid",
-			"Milk Of Magnesia",
-			"Mirafast Soft Chews",
-			"Milk Of Magnesia Mint",
-			"Humco Milk Of Magnesia",
-			"Milk Of Magnesia Cherry",
-			"Milk Of Magnesia Original",
-			"Milk Of Magnesia Concentrate",
-			"Equate Kids Gentle Laxative Sc",
-			"Childrens Oral Saline Laxative",
-			"Dulcolax Soft Chews Watermelon",
-			"Premier Value Milk Of Magnesia",
-			"Walgreens Smoothlax Soft Chews",
-			"Careone Milk Of Magnesia Cherry",
-			"Dulcolax Soft Chews Mixed Berry",
-			"Equate Gentle Laxative Soft Chew"
-		],
-		"sourceNames": [
-			"MAGNESIUM HYDROXIDE"
-		],
-		"purpose": "Saline laxative",
-		"uses": "As an Antacid heartburn upset/sour stomach acid indigestion As a Laxative relieves occasional constipation (irregularity) This product usually produces bowel movement in ½ to 6 hours.",
-		"directions": "As an Antacid do not exceed the maximum recommended daily dose of 20 mL in a 24 hour period shake well before use can be taken with water mL = milliliter adults and children 12 years of age and over 5 mL (1 teaspoonful) children under 12 years of age ask a doctor As a Laxative do not exceed the maximum recommended daily dose in a 24 hour period shake well before use dose may be taken once a day preferably at bedtime, in divided doses, or as directed by a doctor. Drink a full glass (8 oz) of liquid with each dose. mL = milliliter adults and children 12 years and older 15 mL to 30 mL children under 12 years ask a doctor",
-		"warnings": "if you have ever had an allergic reaction to this product or any of its ingredients Ask a doctor before use if you have kidney disease a magnesium-restricted diet stomach pain, nausea, or vomiting a sudden change in bowel habits that lasts over 14 days Ask a doctor or pharmacist before use If you are taking a prescription drug. This product may interact with certain prescription drugs. Stop use and ask a doctor if you have rectal bleeding or no bowel movement after using this product. These could be signs of a serious condition. you need to use a laxative for more than 1 week If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center right away.",
-		"doNotUse": "if you have ever had an allergic reaction to this product or any of its ingredients",
-		"askDoctor": "before use if you have kidney disease a magnesium-restricted diet stomach pain, nausea, or vomiting a sudden change in bowel habits that lasts over 14 days",
-		"askDoctorOrPharmacist": "before use If you are taking a prescription drug. This product may interact with certain prescription drugs.",
-		"whenUsing": "",
-		"stopUse": "if you have rectal bleeding or no bowel movement after using this product. These could be signs of a serious condition. you need to use a laxative for more than 1 week",
-		"pregnancy": ", ask a health professional before use.",
-		"keepOutOfReach": "In case of overdose, get medical help or contact a Poison Control Center right away.",
-		"storage": "each teaspoonful (5 mL) contains: magnesium 1000 mg Sodium Content: 19 mg/10 mL store at room temperature, 20° - 25°C (68° - 77°F). Avoid freezing. Milk of Magnesia Concentrate (white suspension, lemon flavored) is supplied in the following oral dosage form: NDC 0121-0940-10: 10 mL unit dose cup, in a tray of ten cups.",
-		"activeIngredient": "(in each 10 mL) Magnesium hydroxide 2400 mg",
-		"inactiveIngredient": "glycerin, hydroxypropyl methylcellulose, lemon oil, methylparaben, propylene glycol, propylparaben, purified water, sodium citrate dihydrate, sodium saccharin, sorbitol, and sucrose.",
-		"routes": [
-			"Oral"
-		],
-		"symptoms": [
-			"heartburn",
-			"constipation",
-			"upset-stomach"
-		],
-		"minAgeYears": 4,
-		"drowsy": null,
-		"labelCount": 87,
-		"manufacturer": "PAI Holdings, LLC dba PAI Pharma",
-		"ndc": "0121-0940",
-		"splSetId": "2a99a1a8-a830-429f-9cfd-3f29c3d3547c",
-		"effectiveTime": "20241112"
 	},
 	{
 		"slug": "pseudoephedrine-hydrochloride",
@@ -3683,60 +3683,6 @@
 		"effectiveTime": "20251023"
 	},
 	{
-		"slug": "diclofenac-sodium",
-		"genericName": "Diclofenac Sodium",
-		"brandNames": [
-			"Salonpas",
-			"Aspercreme Arthritis",
-			"Arthritis Pain Relief",
-			"Equate Arthritis Pain",
-			"Motrin Arthritis Pain",
-			"Arthritis Pain Reliever",
-			"Curist Arthritis Relief",
-			"Voltaren Arthritis Pain",
-			"Arthritis Pain Relieving",
-			"Aleve Arthritis Pain Gel",
-			"Dg Health Arthritis Pain",
-			"Good Sense Arthritis Pain",
-			"Basic Care Arthritis Pain",
-			"Careone Arthritis Pain Relief",
-			"Gencare-Arthritis Pain Relief",
-			"Topcare Athritis Pain Reliever",
-			"Topcare Arthritis Pain Reliever",
-			"Amazon Basic Care Arthritis Pain"
-		],
-		"sourceNames": [
-			"DICLOFENAC SODIUM"
-		],
-		"purpose": "Arthritis pain reliever",
-		"uses": "• for the temporary relief of arthritis pain ONLY in the following areas: • hand, wrist, elbow (upper body areas) • foot, ankle, knee (lower body areas) • this product may take up to 7 days to work for arthritis pain; it is not for immediate relief. If no pain relief in 7 days, stop use.",
-		"directions": "up to 21 days unless directed by your doctor Not for strains, sprains, bruises or sports injuries. This product has not been shown to work for these types of injuries. Daily Per Dose For your arthritis pain: • Use 4 times per day every day • Do not use on more than 2 body areas at the same time Use ENCLOSED DOSING CARD to measure a dose • For each upper body area (hand, wrist, or elbow) – Squeeze out 2.25 inches (2 grams) • For each lower body area (foot, ankle or knee) – Squeeze out 4.5 inches (4 grams) Read the enclosed User Guide for complete instructions: • use only as directed • do not use more than directed or for longer than directed • apply only to clean, dry skin that does not have any cuts, open wounds, infections or rashes • do not apply in the same area as any other product • do not apply with external heat such as heating pad • do not apply a bandage over the treated area • store ENCLOSED DOSING CARD with your Diclofenac Sodium Topical Gel, 1% product. The dosing card is re-usable.",
-		"warnings": "For external use only Allergy alert: Diclofenac may cause a severe allergic reaction, especially in people allergic to aspirin. Symptoms may include: • hives • asthma (wheezing) • skin reddening • blisters • facial swelling • shock • rash If an allergic reaction occurs, stop use and seek medical help right away. Liver warning: This product contains diclofenac. Liver damage may occur if you apply • more or for a longer time than directed • when using other drugs containing diclofenac Stomach bleeding warning: This product contains an NSAID, which may cause severe stomach bleeding. The chance is small but higher if you • are age 60 or older • have had stomach ulcers or bleeding problems • take a blood thinning (anticoagulant) or steroid drug • take other drugs containing prescription or nonprescription NSAIDs (aspirin, ibuprofen, naproxen, or others) • have 3 or more alcoholic drinks every day while using this product • apply more or for longer than directed Heart attack and stroke warning: NSAIDs, except aspirin, increase the risk of heart attack, heart failure, and stroke. These can be fatal. The risk is higher is you use more than directed or for longer than directed. Do not use • if you have ever had an allergic reaction to any other pain reliever or to a fever reducer • for strains, sprains, bruises or sports injuries. This product has not been shown to work for these types of injuries. • right before or after heart surgery • on more than 2 body areas at the same time • in the eyes, nose or mouth Ask a doctor before use if • you have problems or serious side effects from taking pain relievers or fever reducers • stomach bleeding warning applies to you • you have a history of stomach problems, such as heartburn • you have high blood pressure, heart disease, liver cirrhosis, kidney disease, asthma, or had a stroke • you are taking a diuretic • you are under age 18 years. It is not known if this drug works or is safe in children under age 18 years. Ask a doctor or pharmacist before use if you are • under a doctor’s care for any serious condition • taking any other drug When using this product • avoid contact with eyes, nose, or mouth • if eye contact occurs, rinse thoroughly with water Stop use and ask a doctor if • pain gets worse or lasts more than 21 days • redness or swelling is present in the painful area • fever occurs • skin irritation occurs • any new symptoms appear. These could be signs of a serious condition. • you experience any of the following signs of stomach bleeding: • feel faint • have bloody or black stools • vomit blood • have stomach pain that does not get better • you have symptoms of heart problems or stroke: • chest pain • trouble breathing • leg swelling • weakness in one part or side of body • slurred speech If pregnant or breast feeding, ask a health professional before use. It is especially important not to use diclofenac at 20 weeks or later in pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away (1-800-222-1222).",
-		"doNotUse": "• if you have ever had an allergic reaction to any other pain reliever or to a fever reducer • for strains, sprains, bruises or sports injuries. This product has not been shown to work for these types of injuries. • right before or after heart surgery • on more than 2 body areas at the same time • in the eyes, nose or mouth",
-		"askDoctor": "before use if • you have problems or serious side effects from taking pain relievers or fever reducers • stomach bleeding warning applies to you • you have a history of stomach problems, such as heartburn • you have high blood pressure, heart disease, liver cirrhosis, kidney disease, asthma, or had a stroke • you are taking a diuretic • you are under age 18 years. It is not known if this drug works or is safe in children under age 18 years.",
-		"askDoctorOrPharmacist": "before use if you are • under a doctor’s care for any serious condition • taking any other drug",
-		"whenUsing": "• avoid contact with eyes, nose, or mouth • if eye contact occurs, rinse thoroughly with water",
-		"stopUse": "if • pain gets worse or lasts more than 21 days • redness or swelling is present in the painful area • fever occurs • skin irritation occurs • any new symptoms appear. These could be signs of a serious condition. • you experience any of the following signs of stomach bleeding: • feel faint • have bloody or black stools • vomit blood • have stomach pain that does not get better • you have symptoms of heart problems or stroke: • chest pain • trouble breathing • leg swelling • weakness in one part or side of body • slurred speech",
-		"pregnancy": "If pregnant or breast feeding, ask a health professional before use. It is especially important not to use diclofenac at 20 weeks or later in pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery.",
-		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control Center right away (1-800-222-1222).",
-		"storage": "",
-		"activeIngredient": "Diclofenac sodium (NSAID*) 1% (equivalent to 0.93% diclofenac) *nonsteroidal anti-inflammatory drug",
-		"inactiveIngredient": "carbomer homopolymer Type C, cocoyl caprylocaprate, fragrance, isopropyl alcohol, mineral oil, polyoxyl 20 cetostearyl ether, propylene glycol, purified water, strong ammonia solution",
-		"routes": [
-			"Topical"
-		],
-		"symptoms": [
-			"joint-pain"
-		],
-		"minAgeYears": null,
-		"drowsy": null,
-		"labelCount": 79,
-		"manufacturer": "H E B",
-		"ndc": "59640-198",
-		"splSetId": "027803c5-85ae-4b86-8bd4-e61f8f34d036",
-		"effectiveTime": "20251117"
-	},
-	{
 		"slug": "lidocaine-menthol",
 		"genericName": "Lidocaine, Menthol",
 		"brandNames": [
@@ -3789,11 +3735,65 @@
 		],
 		"minAgeYears": 12,
 		"drowsy": null,
-		"labelCount": 79,
+		"labelCount": 80,
 		"manufacturer": "Alexso, Inc",
 		"ndc": "50488-1001",
 		"splSetId": "100ceb76-8ebe-437b-a8de-37cc76ece9bb",
 		"effectiveTime": "20241209"
+	},
+	{
+		"slug": "diclofenac-sodium",
+		"genericName": "Diclofenac Sodium",
+		"brandNames": [
+			"Salonpas",
+			"Aspercreme Arthritis",
+			"Arthritis Pain Relief",
+			"Equate Arthritis Pain",
+			"Motrin Arthritis Pain",
+			"Arthritis Pain Reliever",
+			"Curist Arthritis Relief",
+			"Voltaren Arthritis Pain",
+			"Arthritis Pain Relieving",
+			"Aleve Arthritis Pain Gel",
+			"Dg Health Arthritis Pain",
+			"Good Sense Arthritis Pain",
+			"Basic Care Arthritis Pain",
+			"Careone Arthritis Pain Relief",
+			"Gencare-Arthritis Pain Relief",
+			"Topcare Athritis Pain Reliever",
+			"Topcare Arthritis Pain Reliever",
+			"Amazon Basic Care Arthritis Pain"
+		],
+		"sourceNames": [
+			"DICLOFENAC SODIUM"
+		],
+		"purpose": "Arthritis pain reliever",
+		"uses": "• for the temporary relief of arthritis pain ONLY in the following areas: • hand, wrist, elbow (upper body areas) • foot, ankle, knee (lower body areas) • this product may take up to 7 days to work for arthritis pain; it is not for immediate relief. If no pain relief in 7 days, stop use.",
+		"directions": "up to 21 days unless directed by your doctor Not for strains, sprains, bruises or sports injuries. This product has not been shown to work for these types of injuries. Daily Per Dose For your arthritis pain: • Use 4 times per day every day • Do not use on more than 2 body areas at the same time Use ENCLOSED DOSING CARD to measure a dose • For each upper body area (hand, wrist, or elbow) – Squeeze out 2.25 inches (2 grams) • For each lower body area (foot, ankle or knee) – Squeeze out 4.5 inches (4 grams) Read the enclosed User Guide for complete instructions: • use only as directed • do not use more than directed or for longer than directed • apply only to clean, dry skin that does not have any cuts, open wounds, infections or rashes • do not apply in the same area as any other product • do not apply with external heat such as heating pad • do not apply a bandage over the treated area • store ENCLOSED DOSING CARD with your Diclofenac Sodium Topical Gel, 1% product. The dosing card is re-usable.",
+		"warnings": "For external use only Allergy alert: Diclofenac may cause a severe allergic reaction, especially in people allergic to aspirin. Symptoms may include: • hives • asthma (wheezing) • skin reddening • blisters • facial swelling • shock • rash If an allergic reaction occurs, stop use and seek medical help right away. Liver warning: This product contains diclofenac. Liver damage may occur if you apply • more or for a longer time than directed • when using other drugs containing diclofenac Stomach bleeding warning: This product contains an NSAID, which may cause severe stomach bleeding. The chance is small but higher if you • are age 60 or older • have had stomach ulcers or bleeding problems • take a blood thinning (anticoagulant) or steroid drug • take other drugs containing prescription or nonprescription NSAIDs (aspirin, ibuprofen, naproxen, or others) • have 3 or more alcoholic drinks every day while using this product • apply more or for longer than directed Heart attack and stroke warning: NSAIDs, except aspirin, increase the risk of heart attack, heart failure, and stroke. These can be fatal. The risk is higher is you use more than directed or for longer than directed. Do not use • if you have ever had an allergic reaction to any other pain reliever or to a fever reducer • for strains, sprains, bruises or sports injuries. This product has not been shown to work for these types of injuries. • right before or after heart surgery • on more than 2 body areas at the same time • in the eyes, nose or mouth Ask a doctor before use if • you have problems or serious side effects from taking pain relievers or fever reducers • stomach bleeding warning applies to you • you have a history of stomach problems, such as heartburn • you have high blood pressure, heart disease, liver cirrhosis, kidney disease, asthma, or had a stroke • you are taking a diuretic • you are under age 18 years. It is not known if this drug works or is safe in children under age 18 years. Ask a doctor or pharmacist before use if you are • under a doctor’s care for any serious condition • taking any other drug When using this product • avoid contact with eyes, nose, or mouth • if eye contact occurs, rinse thoroughly with water Stop use and ask a doctor if • pain gets worse or lasts more than 21 days • redness or swelling is present in the painful area • fever occurs • skin irritation occurs • any new symptoms appear. These could be signs of a serious condition. • you experience any of the following signs of stomach bleeding: • feel faint • have bloody or black stools • vomit blood • have stomach pain that does not get better • you have symptoms of heart problems or stroke: • chest pain • trouble breathing • leg swelling • weakness in one part or side of body • slurred speech If pregnant or breast feeding, ask a health professional before use. It is especially important not to use diclofenac at 20 weeks or later in pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away (1-800-222-1222).",
+		"doNotUse": "• if you have ever had an allergic reaction to any other pain reliever or to a fever reducer • for strains, sprains, bruises or sports injuries. This product has not been shown to work for these types of injuries. • right before or after heart surgery • on more than 2 body areas at the same time • in the eyes, nose or mouth",
+		"askDoctor": "before use if • you have problems or serious side effects from taking pain relievers or fever reducers • stomach bleeding warning applies to you • you have a history of stomach problems, such as heartburn • you have high blood pressure, heart disease, liver cirrhosis, kidney disease, asthma, or had a stroke • you are taking a diuretic • you are under age 18 years. It is not known if this drug works or is safe in children under age 18 years.",
+		"askDoctorOrPharmacist": "before use if you are • under a doctor’s care for any serious condition • taking any other drug",
+		"whenUsing": "• avoid contact with eyes, nose, or mouth • if eye contact occurs, rinse thoroughly with water",
+		"stopUse": "if • pain gets worse or lasts more than 21 days • redness or swelling is present in the painful area • fever occurs • skin irritation occurs • any new symptoms appear. These could be signs of a serious condition. • you experience any of the following signs of stomach bleeding: • feel faint • have bloody or black stools • vomit blood • have stomach pain that does not get better • you have symptoms of heart problems or stroke: • chest pain • trouble breathing • leg swelling • weakness in one part or side of body • slurred speech",
+		"pregnancy": "If pregnant or breast feeding, ask a health professional before use. It is especially important not to use diclofenac at 20 weeks or later in pregnancy unless definitely directed to do so by a doctor because it may cause problems in the unborn child or complications during delivery.",
+		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control Center right away (1-800-222-1222).",
+		"storage": "",
+		"activeIngredient": "Diclofenac sodium (NSAID*) 1% (equivalent to 0.93% diclofenac) *nonsteroidal anti-inflammatory drug",
+		"inactiveIngredient": "carbomer homopolymer Type C, cocoyl caprylocaprate, fragrance, isopropyl alcohol, mineral oil, polyoxyl 20 cetostearyl ether, propylene glycol, purified water, strong ammonia solution",
+		"routes": [
+			"Topical"
+		],
+		"symptoms": [
+			"joint-pain"
+		],
+		"minAgeYears": null,
+		"drowsy": null,
+		"labelCount": 79,
+		"manufacturer": "H E B",
+		"ndc": "59640-198",
+		"splSetId": "027803c5-85ae-4b86-8bd4-e61f8f34d036",
+		"effectiveTime": "20251117"
 	},
 	{
 		"slug": "acetaminophen-dextromethorphan-hydrobromide",
@@ -3852,7 +3852,7 @@
 		],
 		"minAgeYears": 4,
 		"drowsy": true,
-		"labelCount": 78,
+		"labelCount": 79,
 		"manufacturer": "Reckitt Benckiser LLC",
 		"ndc": "72854-161",
 		"splSetId": "31ac6883-ffcd-39de-e063-6294a90a52dd",
@@ -4175,69 +4175,11 @@
 		],
 		"minAgeYears": 2,
 		"drowsy": null,
-		"labelCount": 69,
+		"labelCount": 70,
 		"manufacturer": "Rejoice International",
 		"ndc": "57337-067",
 		"splSetId": "0ffcf0c2-409f-4dea-b296-b5ccb61399df",
 		"effectiveTime": "20250212"
-	},
-	{
-		"slug": "nicotine",
-		"genericName": "Nicotine",
-		"brandNames": [
-			"Medline",
-			"Nicotinum",
-			"Nicoderm Cq",
-			"Quit Smoking Patches",
-			"Quit Smoking Proven Patches",
-			"Nicorette Fruit Chill Nicotine Polacrilex",
-			"Kirkland Signature Nicotine",
-			"Nicotine",
-			"Nicotine Transdermal System Step 3",
-			"Nicotine Transdermal System Step 2",
-			"Nicotine Transdermal System Step 1",
-			"Sielkin Quit Smoking Nicotine Patches",
-			"Sielkin Quit Smoking Nicotine Patches 14mg",
-			"Sielkin Quit Smoking Nicotine Patches 21mg",
-			"Sefudun Quit Smoking Nicotine Patches",
-			"Rbugr Quit Smoking Nicotine Patches",
-			"Stpsmk Quit Smoking Nicotine Patches",
-			"Nwrb Nicotine Transdermal Patch"
-		],
-		"sourceNames": [
-			"NICOTINE",
-			"NICOTINE PATCHES"
-		],
-		"purpose": "Stop smoking aid",
-		"uses": "reduces withdrawal symptoms,includingnicotine craving,associated with quittingsmoking *ifyou smoke 10 orless cigarettes per day, do not useSTEP 1 (21 mg). Start with STEP 2 (14 mg) for 6 weeks,then STEP 3 (7 mg) for 2 weeks and then stop.steps 2 and 3 allow you to gradually reduce yourlevel ofnicotine.Completingthe full program willincrease yourchances ofquittingsuccessfully.apply one new patch every 24 hours on skin that is dry, cleanand hairless. Save pouch for disposingofthe patch after use.remove backingfrom patch andimmediately press onto skin.Hold for 10 seconds.",
-		"directions": "STEP1 Use one 21 mgpatch/day Weeks 1-6 STEP 2 Use one 14 mg patch/day Weeks 7-8 STEP 3 Use one7mg patch/day Weeks9-10",
-		"warnings": "If you are pregnant or breast-feeding, only use this medicine on the advice of your healthcare provider.Smoking can seriously harm your child.Try to stop smoking without using any nicotine replacement medicine.This medicine is believed to safer than smoking.However, the risks to your child from this medicine are not full known.",
-		"doNotUse": "",
-		"askDoctor": "before use ifyou are\"usinga non-nicotine stop smoking drugtaking a prescription medicine for depression or asthma.Your prescription dose may need to be adjusted.",
-		"askDoctorOrPharmacist": "",
-		"whenUsing": "reduces withdrawal symptoms, including nicotine craving, associated with quitting smoking",
-		"stopUse": "",
-		"pregnancy": "",
-		"keepOutOfReach": "and pets. Used patches have enough nicotine to poison children and pets.If swallowed, get medical help or contact a Poison Control Center right away.Save pouch to use for patch di posal.Dispose of the used patches by folding sticky ends together and putting in pouch.",
-		"storage": "",
-		"activeIngredient": "Nicotine",
-		"inactiveIngredient": "ethylene vinylacetate-copolymer, polyisobutylene and high densitypolyethylene between clearpolyester backings",
-		"routes": [
-			"Oral",
-			"Transdermal",
-			"Topical"
-		],
-		"symptoms": [
-			"gas-bloating",
-			"smoking"
-		],
-		"minAgeYears": 18,
-		"drowsy": null,
-		"labelCount": 68,
-		"manufacturer": "Jiashen International Trade Limited",
-		"ndc": "84867-013",
-		"splSetId": "35570155-c769-dc4c-e063-6394a90a019d",
-		"effectiveTime": "20250517"
 	},
 	{
 		"slug": "chlorhexidine-gluconate",
@@ -4346,6 +4288,64 @@
 		"ndc": "69618-028",
 		"splSetId": "32bdd802-16b0-184d-e054-00144ff88e88",
 		"effectiveTime": "20250115"
+	},
+	{
+		"slug": "nicotine",
+		"genericName": "Nicotine",
+		"brandNames": [
+			"Medline",
+			"Nicotinum",
+			"Nicoderm Cq",
+			"Quit Smoking Patches",
+			"Quit Smoking Proven Patches",
+			"Nicorette Fruit Chill Nicotine Polacrilex",
+			"Kirkland Signature Nicotine",
+			"Nicotine",
+			"Nicotine Transdermal System Step 3",
+			"Nicotine Transdermal System Step 2",
+			"Nicotine Transdermal System Step 1",
+			"Sielkin Quit Smoking Nicotine Patches",
+			"Sielkin Quit Smoking Nicotine Patches 14mg",
+			"Sielkin Quit Smoking Nicotine Patches 21mg",
+			"Sefudun Quit Smoking Nicotine Patches",
+			"Rbugr Quit Smoking Nicotine Patches",
+			"Stpsmk Quit Smoking Nicotine Patches",
+			"Nwrb Nicotine Transdermal Patch"
+		],
+		"sourceNames": [
+			"NICOTINE",
+			"NICOTINE PATCHES"
+		],
+		"purpose": "Stop smoking aid",
+		"uses": "reduces withdrawal symptoms,includingnicotine craving,associated with quittingsmoking *ifyou smoke 10 orless cigarettes per day, do not useSTEP 1 (21 mg). Start with STEP 2 (14 mg) for 6 weeks,then STEP 3 (7 mg) for 2 weeks and then stop.steps 2 and 3 allow you to gradually reduce yourlevel ofnicotine.Completingthe full program willincrease yourchances ofquittingsuccessfully.apply one new patch every 24 hours on skin that is dry, cleanand hairless. Save pouch for disposingofthe patch after use.remove backingfrom patch andimmediately press onto skin.Hold for 10 seconds.",
+		"directions": "STEP1 Use one 21 mgpatch/day Weeks 1-6 STEP 2 Use one 14 mg patch/day Weeks 7-8 STEP 3 Use one7mg patch/day Weeks9-10",
+		"warnings": "If you are pregnant or breast-feeding, only use this medicine on the advice of your healthcare provider.Smoking can seriously harm your child.Try to stop smoking without using any nicotine replacement medicine.This medicine is believed to safer than smoking.However, the risks to your child from this medicine are not full known.",
+		"doNotUse": "",
+		"askDoctor": "before use ifyou are\"usinga non-nicotine stop smoking drugtaking a prescription medicine for depression or asthma.Your prescription dose may need to be adjusted.",
+		"askDoctorOrPharmacist": "",
+		"whenUsing": "reduces withdrawal symptoms, including nicotine craving, associated with quitting smoking",
+		"stopUse": "",
+		"pregnancy": "",
+		"keepOutOfReach": "and pets. Used patches have enough nicotine to poison children and pets.If swallowed, get medical help or contact a Poison Control Center right away.Save pouch to use for patch di posal.Dispose of the used patches by folding sticky ends together and putting in pouch.",
+		"storage": "",
+		"activeIngredient": "Nicotine",
+		"inactiveIngredient": "ethylene vinylacetate-copolymer, polyisobutylene and high densitypolyethylene between clearpolyester backings",
+		"routes": [
+			"Oral",
+			"Transdermal",
+			"Topical"
+		],
+		"symptoms": [
+			"gas-bloating",
+			"smoking"
+		],
+		"minAgeYears": 18,
+		"drowsy": null,
+		"labelCount": 67,
+		"manufacturer": "Jiashen International Trade Limited",
+		"ndc": "84867-013",
+		"splSetId": "35570155-c769-dc4c-e063-6394a90a019d",
+		"effectiveTime": "20250517"
 	},
 	{
 		"slug": "camphor-menthol-methyl-salicylate",
@@ -4523,7 +4523,7 @@
 		],
 		"minAgeYears": 12,
 		"drowsy": null,
-		"labelCount": 62,
+		"labelCount": 63,
 		"manufacturer": "Bonafide Health, LLC dba Uqora",
 		"ndc": "73712-114",
 		"splSetId": "426317e7-a925-116a-e063-6294a90a52dc",
@@ -4983,60 +4983,6 @@
 		"effectiveTime": "20260311"
 	},
 	{
-		"slug": "carboxymethylcellulose-sodium",
-		"genericName": "Carboxymethylcellulose Sodium",
-		"brandNames": [
-			"Eye Drops",
-			"Theratears",
-			"Retaine Cmc",
-			"Refresh Plus",
-			"Refresh Tears",
-			"Lubricant Eye",
-			"Dry Eye Relief",
-			"Focus Tears Pf",
-			"Lubricant Drops",
-			"Refresh Liquigel",
-			"Refresh Celluvisc",
-			"Lubricant Eye Drops",
-			"Kroger Lubricant Eye",
-			"Theratears Lubricant",
-			"Rain Renewal Eye Drops",
-			"Refresh Tears Lubricant",
-			"Cvs Lubricant Eye Drops",
-			"Heb Lubricant Eye Drops"
-		],
-		"sourceNames": [
-			"CARBOXYMETHYLCELLULOSE SODIUM"
-		],
-		"purpose": "Eye lubricant",
-		"uses": "For the temporary relief of burning and irritation due to dryness of the eye. For the temporary relief of discomfort due to minor irritations of the eye or from exposure to wind and sun. For use as a lubricant to prevent further irritation or to relieve dryness of the eye.",
-		"directions": "To open, twist tab completely off. Instill 1 or 2 drops into affected eye(s) as needed and discard container.",
-		"warnings": "For use in the eyes only. Do not use if solution changes color or becomes cloudy. When using this product • do not touch tip of container to any surface to avoid contamination. • do not reuse; once opened discard. Stop use and ask a doctor if • you experience eye pain, changes in vision, continued redness or irritation of the eye. • the condition worsens or persists for more than 72 hours. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
-		"doNotUse": "if solution changes color or becomes cloudy.",
-		"askDoctor": "",
-		"askDoctorOrPharmacist": "",
-		"whenUsing": "• do not touch tip of container to any surface to avoid contamination. • do not reuse; once opened discard.",
-		"stopUse": "if • you experience eye pain, changes in vision, continued redness or irritation of the eye. • the condition worsens or persists for more than 72 hours.",
-		"pregnancy": "",
-		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control Center right away.",
-		"storage": "",
-		"activeIngredient": "(In each unit dose) Sodium Carboxymethylcellulose 0.5%",
-		"inactiveIngredient": "Calcium chloride, magnesium chloride, potassium chloride, purified water, sodium chloride, sodium lactate. May also contain hydrochloric acid and/or sodium hydroxide to adjust pH.",
-		"routes": [
-			"Ophthalmic"
-		],
-		"symptoms": [
-			"dry-eyes"
-		],
-		"minAgeYears": null,
-		"drowsy": null,
-		"labelCount": 54,
-		"manufacturer": "MEDTECH PRODUCTS INC",
-		"ndc": "58790-013",
-		"splSetId": "02b70e2d-8159-4637-a282-9eac1468e786",
-		"effectiveTime": "20260107"
-	},
-	{
 		"slug": "methyl-salicylate",
 		"genericName": "Methyl Salicylate",
 		"brandNames": [
@@ -5094,6 +5040,60 @@
 		"ndc": "82461-415",
 		"splSetId": "143f76bf-2de4-466a-8a6b-d6ab6314a2c3",
 		"effectiveTime": "20250714"
+	},
+	{
+		"slug": "carboxymethylcellulose-sodium",
+		"genericName": "Carboxymethylcellulose Sodium",
+		"brandNames": [
+			"Eye Drops",
+			"Theratears",
+			"Retaine Cmc",
+			"Refresh Plus",
+			"Refresh Tears",
+			"Lubricant Eye",
+			"Dry Eye Relief",
+			"Focus Tears Pf",
+			"Lubricant Drops",
+			"Refresh Liquigel",
+			"Refresh Celluvisc",
+			"Lubricant Eye Drops",
+			"Kroger Lubricant Eye",
+			"Theratears Lubricant",
+			"Rain Renewal Eye Drops",
+			"Cvs Lubricant Eye Drops",
+			"Heb Lubricant Eye Drops",
+			"Theratears Dry And Tired"
+		],
+		"sourceNames": [
+			"CARBOXYMETHYLCELLULOSE SODIUM"
+		],
+		"purpose": "Eye lubricant",
+		"uses": "For the temporary relief of burning and irritation due to dryness of the eye. For the temporary relief of discomfort due to minor irritations of the eye or from exposure to wind and sun. For use as a lubricant to prevent further irritation or to relieve dryness of the eye.",
+		"directions": "To open, twist tab completely off. Instill 1 or 2 drops into affected eye(s) as needed and discard container.",
+		"warnings": "For use in the eyes only. Do not use if solution changes color or becomes cloudy. When using this product • do not touch tip of container to any surface to avoid contamination. • do not reuse; once opened discard. Stop use and ask a doctor if • you experience eye pain, changes in vision, continued redness or irritation of the eye. • the condition worsens or persists for more than 72 hours. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
+		"doNotUse": "if solution changes color or becomes cloudy.",
+		"askDoctor": "",
+		"askDoctorOrPharmacist": "",
+		"whenUsing": "• do not touch tip of container to any surface to avoid contamination. • do not reuse; once opened discard.",
+		"stopUse": "if • you experience eye pain, changes in vision, continued redness or irritation of the eye. • the condition worsens or persists for more than 72 hours.",
+		"pregnancy": "",
+		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control Center right away.",
+		"storage": "",
+		"activeIngredient": "(In each unit dose) Sodium Carboxymethylcellulose 0.5%",
+		"inactiveIngredient": "Calcium chloride, magnesium chloride, potassium chloride, purified water, sodium chloride, sodium lactate. May also contain hydrochloric acid and/or sodium hydroxide to adjust pH.",
+		"routes": [
+			"Ophthalmic"
+		],
+		"symptoms": [
+			"dry-eyes"
+		],
+		"minAgeYears": null,
+		"drowsy": null,
+		"labelCount": 53,
+		"manufacturer": "MEDTECH PRODUCTS INC",
+		"ndc": "58790-013",
+		"splSetId": "02b70e2d-8159-4637-a282-9eac1468e786",
+		"effectiveTime": "20260107"
 	},
 	{
 		"slug": "levonorgestrel",
@@ -5208,61 +5208,6 @@
 		"ndc": "42507-223",
 		"splSetId": "3e614265-b35a-5d01-e063-6294a90aad85",
 		"effectiveTime": "20251103"
-	},
-	{
-		"slug": "bacitracin-zinc",
-		"genericName": "Bacitracin Zinc",
-		"brandNames": [
-			"Vitastem Ultra",
-			"Family Wellness",
-			"Single Antibiotic",
-			"Astonea First Aid",
-			"Medpride First Aid",
-			"First Aid Antibiotic",
-			"Family Care First Aid",
-			"Viaderma Care First Aid",
-			"Elixirbacishield First Aid",
-			"Viaderma Care First Aid Antibiotic",
-			"Vitastem Ultra First Aid Antibiotic",
-			"Sheffield Bacitracin Zinc",
-			"Bacitracin Zinc",
-			"Always Save Bacitracin Zinc",
-			"Single Antibiotic With Bacitracin",
-			"Sion Biotext Bacitracin Zinc",
-			"Procure Bacitracin Zinc",
-			"Fifthpulse Bacitracin Zinc 1oz"
-		],
-		"sourceNames": [
-			"BACITRACIN ZINC"
-		],
-		"purpose": "First aid antibiotic",
-		"uses": "First aid to help prevent skin infection in minor cuts, scrapes, and burns",
-		"directions": "clean the affected area apply a small amount of this product (an amount equal to the surface area of the tip of a finger) on the area 1 to 3 times daily may be covered with a sterile bandage",
-		"warnings": "For external use only. Do not use • longer than 1 week unless directed by a doctor • in the eyes • over large areas of the body Ask a doctor before use if you have deep or puncture wounds, animal bites, or serious burns. Stop use and ask a doctor if condition persists or gets worse. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
-		"doNotUse": "• longer than 1 week unless directed by a doctor • in the eyes • over large areas of the body",
-		"askDoctor": "before use if you have deep or puncture wounds, animal bites, or serious burns.",
-		"askDoctorOrPharmacist": "",
-		"whenUsing": "",
-		"stopUse": "if condition persists or gets worse.",
-		"pregnancy": "",
-		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control Center right away.",
-		"storage": "",
-		"activeIngredient": "(in each gram) Bacitracin Zinc 500 units Purpose First aid antibiotic",
-		"inactiveIngredient": "Acetic acid, ascorbic acid, butylated hydroxyanisole, butylated hydroxytoluene, cholecalciferol, dimethyl sulfoxide, dipropylene glycol, gluconolactone, glycerin, histidine, hydroxethyl-cellulose, magnesium stearate, sodium hydroxide, sorbic acid, water.",
-		"routes": [
-			"Topical"
-		],
-		"symptoms": [
-			"cuts-scrapes",
-			"earache"
-		],
-		"minAgeYears": null,
-		"drowsy": null,
-		"labelCount": 50,
-		"manufacturer": "VIADERMA DISTRIBUTION INC",
-		"ndc": "71262-018",
-		"splSetId": "0f36f396-e479-486c-b047-2760477609e2",
-		"effectiveTime": "20251201"
 	},
 	{
 		"slug": "doxylamine-succinate",
@@ -5439,6 +5384,61 @@
 		"effectiveTime": "20230830"
 	},
 	{
+		"slug": "bacitracin-zinc",
+		"genericName": "Bacitracin Zinc",
+		"brandNames": [
+			"Vitastem Ultra",
+			"Family Wellness",
+			"Single Antibiotic",
+			"Astonea First Aid",
+			"Medpride First Aid",
+			"First Aid Antibiotic",
+			"Family Care First Aid",
+			"Viaderma Care First Aid",
+			"Elixirbacishield First Aid",
+			"Viaderma Care First Aid Antibiotic",
+			"Vitastem Ultra First Aid Antibiotic",
+			"Sheffield Bacitracin Zinc",
+			"Bacitracin Zinc",
+			"Always Save Bacitracin Zinc",
+			"Single Antibiotic With Bacitracin",
+			"Sion Biotext Bacitracin Zinc",
+			"Procure Bacitracin Zinc",
+			"Fifthpulse Bacitracin Zinc 1oz"
+		],
+		"sourceNames": [
+			"BACITRACIN ZINC"
+		],
+		"purpose": "First aid antibiotic",
+		"uses": "First aid to help prevent skin infection in minor cuts, scrapes, and burns",
+		"directions": "clean the affected area apply a small amount of this product (an amount equal to the surface area of the tip of a finger) on the area 1 to 3 times daily may be covered with a sterile bandage",
+		"warnings": "For external use only. Do not use • longer than 1 week unless directed by a doctor • in the eyes • over large areas of the body Ask a doctor before use if you have deep or puncture wounds, animal bites, or serious burns. Stop use and ask a doctor if condition persists or gets worse. Keep out of reach of children. If swallowed, get medical help or contact a Poison Control Center right away.",
+		"doNotUse": "• longer than 1 week unless directed by a doctor • in the eyes • over large areas of the body",
+		"askDoctor": "before use if you have deep or puncture wounds, animal bites, or serious burns.",
+		"askDoctorOrPharmacist": "",
+		"whenUsing": "",
+		"stopUse": "if condition persists or gets worse.",
+		"pregnancy": "",
+		"keepOutOfReach": "If swallowed, get medical help or contact a Poison Control Center right away.",
+		"storage": "",
+		"activeIngredient": "(in each gram) Bacitracin Zinc 500 units Purpose First aid antibiotic",
+		"inactiveIngredient": "Acetic acid, ascorbic acid, butylated hydroxyanisole, butylated hydroxytoluene, cholecalciferol, dimethyl sulfoxide, dipropylene glycol, gluconolactone, glycerin, histidine, hydroxethyl-cellulose, magnesium stearate, sodium hydroxide, sorbic acid, water.",
+		"routes": [
+			"Topical"
+		],
+		"symptoms": [
+			"cuts-scrapes",
+			"earache"
+		],
+		"minAgeYears": null,
+		"drowsy": null,
+		"labelCount": 49,
+		"manufacturer": "VIADERMA DISTRIBUTION INC",
+		"ndc": "71262-018",
+		"splSetId": "0f36f396-e479-486c-b047-2760477609e2",
+		"effectiveTime": "20251201"
+	},
+	{
 		"slug": "aluminum-hydroxide-dimethicone-magnesium-hydroxide",
 		"genericName": "Aluminum Hydroxide, Dimethicone, Magnesium Hydroxide",
 		"brandNames": [
@@ -5498,16 +5498,10 @@
 		"slug": "caffeine",
 		"genericName": "Caffeine",
 		"brandNames": [
-			"Alert",
 			"Vivarin",
-			"Alert Aid",
 			"Stay Awake",
-			"Diurex Ultra",
 			"Uplift Chewable",
-			"Diurex Ultimate",
 			"Alert Alertness Aid",
-			"Awake Maximum Strength",
-			"Jet Alert Regular Strength",
 			"Stay Awake Maximum Strength",
 			"Earthmed Uplift Chewable Orange",
 			"Earthmed Uplift Chewable Cherry",
@@ -6412,6 +6406,60 @@
 		"effectiveTime": "20240725"
 	},
 	{
+		"slug": "psyllium-husk",
+		"genericName": "Psyllium Husk",
+		"brandNames": [
+			"Publix",
+			"Careone",
+			"Dr. Fibra",
+			"Sams West",
+			"Fiber Laxative",
+			"Premier Value Fiber",
+			"Meijer Fiber Therapy",
+			"Meijer Natural Fiber",
+			"Meijer Fiber Laxative",
+			"Target Fiber Laxative",
+			"Daily Fiber Sugar Free",
+			"Careone Orange Flavored",
+			"Up And Up Fiber Therapy",
+			"Best Choice Fiber Laxative",
+			"Premier Value Orange Flavor",
+			"Quality Choice Fiber Laxative",
+			"Topco Fiber Therapy Sugar Free",
+			"Ultra Organic Fiber Sugar Free"
+		],
+		"sourceNames": [
+			"PSYLLIUM HUSK"
+		],
+		"purpose": "Bulk-Forming · Laxative",
+		"uses": "• effective in treating occasional constipation and restoring regularity • This product generally produces bowel movement in 12 to 72 hours.",
+		"directions": "• Take this product with at least 8 ounces (a full glass) of water or other fluid. Taking this product without enough liquid may cause choking. See choking warning. • Adults 12 years and older: 5 capsules with at least 8 ounces of liquid (swallow 1 capsule at a time) at the first sign of irregularity. Can be taken up to 3 times daily. • Children 12 years and under: Ask a doctor • Laxatives, including bulk fibers, may affect how well other medicines work. If you are taking a prescription medication by mouth, take this product at least 2 hours before or 2 hours after the prescribed medicine. • As your body adjusts to increased fiber intake, you may experience changes in bowel habits or minor bloating.",
+		"warnings": "Choking Taking this product without adequate fluid may cause it to swell and block your throat or esophagus and may cause choking. Do not take this product if you have difficulty in swallowing. If you experience chest pain, vomiting, or difficulty in swallowing or breathing after taking this product, seek immediate medical attention. Allergy alert This product may cause allergic reaction in people sensitive to inhaled or ingested psyllium. Ask a doctor before use if you have • a sudden change in bowel habits persisting for 2 weeks • abdominal pain, nausea or vomiting Stop use and ask a doctor if • constipation lasts more than 7 days • rectal bleeding occurs These may be signs of a serious condition. Keep out of reach of children In case of overdose, get medical help or contact a Poison Control Center right away at 1-800-222-1222.",
+		"doNotUse": "",
+		"askDoctor": "",
+		"askDoctorOrPharmacist": "",
+		"whenUsing": "",
+		"stopUse": "",
+		"pregnancy": "",
+		"keepOutOfReach": "In case of overdose, get medical help or contact a Poison Control Center right away at 1-800-222-1222.",
+		"storage": "• each capsule contains: potassium 5 mg • capsules are sealed using a band around the middle • store at room temperature. Keep the container tightly closed to protect from humidity • contains a 100% natural, therapeutic fiber",
+		"activeIngredient": "(in each capsule) Psyllium husk approximately 0.52 g",
+		"inactiveIngredient": "caramel color, edible ink, gelatin, polysorbate 80 Questions or comments? 1-866-467-2748",
+		"routes": [
+			"Oral"
+		],
+		"symptoms": [
+			"constipation"
+		],
+		"minAgeYears": 6,
+		"drowsy": null,
+		"labelCount": 36,
+		"manufacturer": "BEST CHOICE (VALU MERCHANDISERS COMPANY)",
+		"ndc": "63941-119",
+		"splSetId": "92b46689-b5fc-41f4-91ac-535699900b39",
+		"effectiveTime": "20260717"
+	},
+	{
 		"slug": "chlorpheniramine-maleate",
 		"genericName": "Chlorpheniramine Maleate",
 		"brandNames": [
@@ -6461,60 +6509,6 @@
 		"ndc": "51467-101",
 		"splSetId": "01a1a91e-04ba-4526-8946-10483932b30c",
 		"effectiveTime": "20251113"
-	},
-	{
-		"slug": "psyllium-husk",
-		"genericName": "Psyllium Husk",
-		"brandNames": [
-			"Publix",
-			"Careone",
-			"Dr. Fibra",
-			"Sams West",
-			"Fiber Laxative",
-			"Premier Value Fiber",
-			"Meijer Fiber Therapy",
-			"Meijer Natural Fiber",
-			"Meijer Fiber Laxative",
-			"Target Fiber Laxative",
-			"Daily Fiber Sugar Free",
-			"Careone Orange Flavored",
-			"Up And Up Fiber Therapy",
-			"Best Choice Fiber Laxative",
-			"Premier Value Orange Flavor",
-			"Quality Choice Fiber Laxative",
-			"Topco Fiber Therapy Sugar Free",
-			"Ultra Organic Fiber Sugar Free"
-		],
-		"sourceNames": [
-			"PSYLLIUM HUSK"
-		],
-		"purpose": "Bulk-Forming · Laxative",
-		"uses": "• effective in treating occasional constipation and restoring regularity • This product generally produces bowel movement in 12 to 72 hours.",
-		"directions": "• Take this product with at least 8 ounces (a full glass) of water or other fluid. Taking this product without enough liquid may cause choking. See choking warning. • Adults 12 years and older: 5 capsules with at least 8 ounces of liquid (swallow 1 capsule at a time) at the first sign of irregularity. Can be taken up to 3 times daily. • Children 12 years and under: Ask a doctor • Laxatives, including bulk fibers, may affect how well other medicines work. If you are taking a prescription medication by mouth, take this product at least 2 hours before or 2 hours after the prescribed medicine. • As your body adjusts to increased fiber intake, you may experience changes in bowel habits or minor bloating.",
-		"warnings": "Choking Taking this product without adequate fluid may cause it to swell and block your throat or esophagus and may cause choking. Do not take this product if you have difficulty in swallowing. If you experience chest pain, vomiting, or difficulty in swallowing or breathing after taking this product, seek immediate medical attention. Allergy alert This product may cause allergic reaction in people sensitive to inhaled or ingested psyllium. Ask a doctor before use if you have • a sudden change in bowel habits persisting for 2 weeks • abdominal pain, nausea or vomiting Stop use and ask a doctor if • constipation lasts more than 7 days • rectal bleeding occurs These may be signs of a serious condition. Keep out of reach of children In case of overdose, get medical help or contact a Poison Control Center right away at 1-800-222-1222.",
-		"doNotUse": "",
-		"askDoctor": "",
-		"askDoctorOrPharmacist": "",
-		"whenUsing": "",
-		"stopUse": "",
-		"pregnancy": "",
-		"keepOutOfReach": "In case of overdose, get medical help or contact a Poison Control Center right away at 1-800-222-1222.",
-		"storage": "• each capsule contains: potassium 5 mg • capsules are sealed using a band around the middle • store at room temperature. Keep the container tightly closed to protect from humidity • contains a 100% natural, therapeutic fiber",
-		"activeIngredient": "(in each capsule) Psyllium husk approximately 0.52 g",
-		"inactiveIngredient": "caramel color, edible ink, gelatin, polysorbate 80 Questions or comments? 1-866-467-2748",
-		"routes": [
-			"Oral"
-		],
-		"symptoms": [
-			"constipation"
-		],
-		"minAgeYears": 6,
-		"drowsy": null,
-		"labelCount": 35,
-		"manufacturer": "BEST CHOICE (VALU MERCHANDISERS COMPANY)",
-		"ndc": "63941-119",
-		"splSetId": "92b46689-b5fc-41f4-91ac-535699900b39",
-		"effectiveTime": "20260717"
 	},
 	{
 		"slug": "sodium-bicarbonate-sodium-chloride",
@@ -7445,6 +7439,63 @@
 		"effectiveTime": "20251006"
 	},
 	{
+		"slug": "triamcinolone-acetonide",
+		"genericName": "Triamcinolone Acetonide",
+		"brandNames": [
+			"Nasacort",
+			"Nasal Allergy",
+			"Allergy Nasal",
+			"Allergy Relief",
+			"Nasal Allergy Relief",
+			"Equate Nasal Allergy",
+			"Nasacort Allergy 24hr",
+			"24 Hour Nasal Allergy",
+			"Topcare Nasal Allergy",
+			"Equaline Nasal Allergy",
+			"Up And Up Nasal Allergy",
+			"Dg Health Nasal Allergy",
+			"Good Sense Nasal Allergy",
+			"Basic Care Nasal Allergy",
+			"Signature Care Nasal Allergy",
+			"Foster And Thrive 24 Hour Nasal Allergy",
+			"Good Neighbor Pharmacy 24 Hour Nasal Allergy",
+			"Triamcinolone Acetonide"
+		],
+		"sourceNames": [
+			"TRIAMCINOLONE ACETONIDE"
+		],
+		"purpose": "Allergy symptom reliever",
+		"uses": "temporarily relieves these symptoms of hay fever or other upper respiratory allergies: • nasal congestion • runny nose • sneezing • itchy nose",
+		"directions": "Read insert (inside package) on how to: • get a new bottle ready (primed) before first use • prime bottle again if not used for more than 2 weeks • use the spray • clean the spray nozzle ADULTS AND CHILDREN 12 YEARS OF AGE AND OLDER adults and children 12 years of age and older • once daily, spray 2 times into each nostril while sniffing gently • once your allergy symptoms improve, reduce to 1 spray in each nostril per day CHILDREN 2 TO UNDER 12 YEARS OF AGE • the growth rate of some children may be slower while using this product. Talk to your child’s doctor if your child needs to use the spray for longer than two months a year. children 6 to under 12 years of age • an adult should supervise use • once daily, spray 1 time into each nostril while sniffing gently • if allergy symptoms do not improve, increase to 2 sprays in each nostril per day. Once allergy symptoms improve, reduce to 1 spray in each nostril per day. children 2 to under 6 years of age • an adult should supervise use • once daily, spray 1 time into each nostril while sniffing gently children under 2 years of age • do not use • do not use more than directed • if you forget a dose, do not double the next dose • do not spray into eyes or mouth • if allergy symptoms do not improve after one week, stop using and talk to a doctor • do not use for the common cold • shake well before each use",
+		"warnings": "• in children under 2 years of age • if you have ever had an allergic reaction to any of the ingredients Ask a doctor before use if you • have had recent nose ulcers or nose surgery • have had a nose injury that has not healed • are using a steroid medicine for asthma, allergies or skin rash • have an eye infection • have or had glaucoma or cataracts When using this product • the growth rate of some children may be slower • some symptoms may get better on the first day of treatment. It may take up to one week of daily use to feel the most symptom relief. • do not share this bottle with anyone else as this may spread germs • remember to tell your doctor about all the medicines you take, including this one Stop use and ask a doctor if • you have, or come into contact with someone who has, chickenpox, measles or tuberculosis • you have or develop symptoms of an infection such as a persistent fever • you have any change in vision • you have severe or frequent nosebleeds If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center right away (1-800-222-1222).",
+		"doNotUse": "• in children under 2 years of age • if you have ever had an allergic reaction to any of the ingredients",
+		"askDoctor": "before use if you • have had recent nose ulcers or nose surgery • have had a nose injury that has not healed • are using a steroid medicine for asthma, allergies or skin rash • have an eye infection • have or had glaucoma or cataracts",
+		"askDoctorOrPharmacist": "",
+		"whenUsing": "• the growth rate of some children may be slower • some symptoms may get better on the first day of treatment. It may take up to one week of daily use to feel the most symptom relief. • do not share this bottle with anyone else as this may spread germs • remember to tell your doctor about all the medicines you take, including this one",
+		"stopUse": "if • you have, or come into contact with someone who has, chickenpox, measles or tuberculosis • you have or develop symptoms of an infection such as a persistent fever • you have any change in vision • you have severe or frequent nosebleeds",
+		"pregnancy": ", ask a health professional before use.",
+		"keepOutOfReach": "In case of overdose, get medical help or contact a Poison Control Center right away (1-800-222-1222).",
+		"storage": "• do not use if printed bottle wrap is torn or opened • keep package and insert. They contain important information. • store between 20°-25°C (68°-77°F)",
+		"activeIngredient": "(in each spray) Triamcinolone acetonide 55 mcg (glucocorticoid)",
+		"inactiveIngredient": "benzalkonium chloride, carboxymethylcellulose sodium, dextrose anhydrous, edetate disodium dihydrate, hydrochloric acid or sodium hydroxide (for pH adjustment), microcrystalline cellulose, polysorbate 80, purified water",
+		"routes": [
+			"Nasal"
+		],
+		"symptoms": [
+			"fever",
+			"nasal-congestion",
+			"runny-nose",
+			"allergies"
+		],
+		"minAgeYears": 2,
+		"drowsy": null,
+		"labelCount": 28,
+		"manufacturer": "L. Perrigo Company",
+		"ndc": "0113-0443",
+		"splSetId": "082c79e9-d6b2-40b8-baf9-2a91b9ecaea4",
+		"effectiveTime": "20260608"
+	},
+	{
 		"slug": "aluminum-hydroxide-magnesium-carbonate",
 		"genericName": "Aluminum Hydroxide, Magnesium Carbonate",
 		"brandNames": [
@@ -7611,63 +7662,6 @@
 		"ndc": "72427-3495",
 		"splSetId": "4f6dec8b-078a-f321-e063-6294a90a248c",
 		"effectiveTime": "20260414"
-	},
-	{
-		"slug": "triamcinolone-acetonide",
-		"genericName": "Triamcinolone Acetonide",
-		"brandNames": [
-			"Nasacort",
-			"Nasal Allergy",
-			"Allergy Nasal",
-			"Allergy Relief",
-			"Nasal Allergy Relief",
-			"Equate Nasal Allergy",
-			"Nasacort Allergy 24hr",
-			"24 Hour Nasal Allergy",
-			"Topcare Nasal Allergy",
-			"Equaline Nasal Allergy",
-			"Up And Up Nasal Allergy",
-			"Dg Health Nasal Allergy",
-			"Good Sense Nasal Allergy",
-			"Basic Care Nasal Allergy",
-			"Signature Care Nasal Allergy",
-			"Foster And Thrive 24 Hour Nasal Allergy",
-			"Good Neighbor Pharmacy 24 Hour Nasal Allergy",
-			"Triamcinolone Acetonide"
-		],
-		"sourceNames": [
-			"TRIAMCINOLONE ACETONIDE"
-		],
-		"purpose": "Allergy symptom reliever",
-		"uses": "temporarily relieves these symptoms of hay fever or other upper respiratory allergies: • nasal congestion • runny nose • sneezing • itchy nose",
-		"directions": "Read insert (inside package) on how to: • get a new bottle ready (primed) before first use • prime bottle again if not used for more than 2 weeks • use the spray • clean the spray nozzle ADULTS AND CHILDREN 12 YEARS OF AGE AND OLDER adults and children 12 years of age and older • once daily, spray 2 times into each nostril while sniffing gently • once your allergy symptoms improve, reduce to 1 spray in each nostril per day CHILDREN 2 TO UNDER 12 YEARS OF AGE • the growth rate of some children may be slower while using this product. Talk to your child’s doctor if your child needs to use the spray for longer than two months a year. children 6 to under 12 years of age • an adult should supervise use • once daily, spray 1 time into each nostril while sniffing gently • if allergy symptoms do not improve, increase to 2 sprays in each nostril per day. Once allergy symptoms improve, reduce to 1 spray in each nostril per day. children 2 to under 6 years of age • an adult should supervise use • once daily, spray 1 time into each nostril while sniffing gently children under 2 years of age • do not use • do not use more than directed • if you forget a dose, do not double the next dose • do not spray into eyes or mouth • if allergy symptoms do not improve after one week, stop using and talk to a doctor • do not use for the common cold • shake well before each use",
-		"warnings": "• in children under 2 years of age • if you have ever had an allergic reaction to any of the ingredients Ask a doctor before use if you • have had recent nose ulcers or nose surgery • have had a nose injury that has not healed • are using a steroid medicine for asthma, allergies or skin rash • have an eye infection • have or had glaucoma or cataracts When using this product • the growth rate of some children may be slower • some symptoms may get better on the first day of treatment. It may take up to one week of daily use to feel the most symptom relief. • do not share this bottle with anyone else as this may spread germs • remember to tell your doctor about all the medicines you take, including this one Stop use and ask a doctor if • you have, or come into contact with someone who has, chickenpox, measles or tuberculosis • you have or develop symptoms of an infection such as a persistent fever • you have any change in vision • you have severe or frequent nosebleeds If pregnant or breast-feeding, ask a health professional before use. Keep out of reach of children. In case of overdose, get medical help or contact a Poison Control Center right away (1-800-222-1222).",
-		"doNotUse": "• in children under 2 years of age • if you have ever had an allergic reaction to any of the ingredients",
-		"askDoctor": "before use if you • have had recent nose ulcers or nose surgery • have had a nose injury that has not healed • are using a steroid medicine for asthma, allergies or skin rash • have an eye infection • have or had glaucoma or cataracts",
-		"askDoctorOrPharmacist": "",
-		"whenUsing": "• the growth rate of some children may be slower • some symptoms may get better on the first day of treatment. It may take up to one week of daily use to feel the most symptom relief. • do not share this bottle with anyone else as this may spread germs • remember to tell your doctor about all the medicines you take, including this one",
-		"stopUse": "if • you have, or come into contact with someone who has, chickenpox, measles or tuberculosis • you have or develop symptoms of an infection such as a persistent fever • you have any change in vision • you have severe or frequent nosebleeds",
-		"pregnancy": ", ask a health professional before use.",
-		"keepOutOfReach": "In case of overdose, get medical help or contact a Poison Control Center right away (1-800-222-1222).",
-		"storage": "• do not use if printed bottle wrap is torn or opened • keep package and insert. They contain important information. • store between 20°-25°C (68°-77°F)",
-		"activeIngredient": "(in each spray) Triamcinolone acetonide 55 mcg (glucocorticoid)",
-		"inactiveIngredient": "benzalkonium chloride, carboxymethylcellulose sodium, dextrose anhydrous, edetate disodium dihydrate, hydrochloric acid or sodium hydroxide (for pH adjustment), microcrystalline cellulose, polysorbate 80, purified water",
-		"routes": [
-			"Nasal"
-		],
-		"symptoms": [
-			"fever",
-			"nasal-congestion",
-			"runny-nose",
-			"allergies"
-		],
-		"minAgeYears": 2,
-		"drowsy": null,
-		"labelCount": 27,
-		"manufacturer": "L. Perrigo Company",
-		"ndc": "0113-0443",
-		"splSetId": "082c79e9-d6b2-40b8-baf9-2a91b9ecaea4",
-		"effectiveTime": "20260608"
 	},
 	{
 		"slug": "aspirin-caffeine",
@@ -9011,44 +9005,6 @@
 		"effectiveTime": "20260623"
 	},
 	{
-		"slug": "magnesium-oxide",
-		"genericName": "Magnesium Oxide",
-		"brandNames": [
-			"Magnesium Oxide"
-		],
-		"sourceNames": [
-			"MAGNESIUM OXIDE"
-		],
-		"purpose": "Dietary Supplement",
-		"uses": "SUGGESTED USE As a dietary supplements, adult take one (1) tablet daily preferably with food or as directed by your healthcare practitioner.",
-		"directions": "Supplement Facts Serving Size 1 Tablet Magnesium (as Magnesium Oxide) Amount per Serving 253mg % Daily value 63%",
-		"warnings": "CAUTIONS If you are pregnant, nursing, taking any medications or have any medical condition, consult your doctor before use. If you have any kidney disease, take only under the supervision of a doctor. Discontinue use and consult your doctor if any adverse reactions occur. Keep out of reach of children. DO NOT USE IF IMPRINTED SAFETY SEAL UNDER CAP IS BROKEN OR MISSING.",
-		"doNotUse": "",
-		"askDoctor": "",
-		"askDoctorOrPharmacist": "",
-		"whenUsing": "",
-		"stopUse": "",
-		"pregnancy": "",
-		"keepOutOfReach": "",
-		"storage": "",
-		"activeIngredient": "(In each tablet) Magnesium Oxide 420 mg",
-		"inactiveIngredient": "Other Ingredients Colloidal silicon dioxide, Croscarmellose sodium, microcrystalline cellulose, stearic acid Magnesium oxide may help with magnesium deficiencies.*",
-		"routes": [
-			"Oral"
-		],
-		"symptoms": [
-			"heartburn",
-			"upset-stomach"
-		],
-		"minAgeYears": null,
-		"drowsy": null,
-		"labelCount": 18,
-		"manufacturer": "Marlex Pharmaceuticals Inc.",
-		"ndc": "10135-721",
-		"splSetId": "dc57893c-068a-37d8-e053-2a95a90aa054",
-		"effectiveTime": "20251114"
-	},
-	{
 		"slug": "methenamine-sodium-salicylate",
 		"genericName": "Methenamine, Sodium Salicylate",
 		"brandNames": [
@@ -9232,6 +9188,44 @@
 		"ndc": "49873-703",
 		"splSetId": "e27a3840-d9de-4bd0-ad75-8a151bd12b83",
 		"effectiveTime": "20231128"
+	},
+	{
+		"slug": "magnesium-oxide",
+		"genericName": "Magnesium Oxide",
+		"brandNames": [
+			"Magnesium Oxide"
+		],
+		"sourceNames": [
+			"MAGNESIUM OXIDE"
+		],
+		"purpose": "Dietary Supplement",
+		"uses": "SUGGESTED USE As a dietary supplements, adult take one (1) tablet daily preferably with food or as directed by your healthcare practitioner.",
+		"directions": "Supplement Facts Serving Size 1 Tablet Magnesium (as Magnesium Oxide) Amount per Serving 253mg % Daily value 63%",
+		"warnings": "CAUTIONS If you are pregnant, nursing, taking any medications or have any medical condition, consult your doctor before use. If you have any kidney disease, take only under the supervision of a doctor. Discontinue use and consult your doctor if any adverse reactions occur. Keep out of reach of children. DO NOT USE IF IMPRINTED SAFETY SEAL UNDER CAP IS BROKEN OR MISSING.",
+		"doNotUse": "",
+		"askDoctor": "",
+		"askDoctorOrPharmacist": "",
+		"whenUsing": "",
+		"stopUse": "",
+		"pregnancy": "",
+		"keepOutOfReach": "",
+		"storage": "",
+		"activeIngredient": "(In each tablet) Magnesium Oxide 420 mg",
+		"inactiveIngredient": "Other Ingredients Colloidal silicon dioxide, Croscarmellose sodium, microcrystalline cellulose, stearic acid Magnesium oxide may help with magnesium deficiencies.*",
+		"routes": [
+			"Oral"
+		],
+		"symptoms": [
+			"heartburn",
+			"upset-stomach"
+		],
+		"minAgeYears": null,
+		"drowsy": null,
+		"labelCount": 17,
+		"manufacturer": "Marlex Pharmaceuticals Inc.",
+		"ndc": "10135-721",
+		"splSetId": "dc57893c-068a-37d8-e053-2a95a90aa054",
+		"effectiveTime": "20251114"
 	},
 	{
 		"slug": "naloxone-hydrochloride",
@@ -9766,52 +9760,6 @@
 		"effectiveTime": "20241015"
 	},
 	{
-		"slug": "ivermectin",
-		"genericName": "Ivermectin",
-		"brandNames": [
-			"Sklice",
-			"Rid One And Done",
-			"Lice Treatment Dedicated",
-			"Ivermectin",
-			"Ivometn Ivermectin Lice Treatment",
-			"Synthabio Ivermectin",
-			"Head Lice Treatment Ivermectin Lotion118ml"
-		],
-		"sourceNames": [
-			"IVERMECTIN"
-		],
-		"purpose": "Anthelmintic and Boticide Removes worms and bots",
-		"uses": "Consult your veterinarian for assistance in the diagnosis treatment, and control of parasitism. Provides effective treatment and control of the following parasites in horses: Large Strongyles: Strongylus vulgaris(including early forms in blood vessels),S.edentatus, and Triodonto-phorus spp. Small Strongyles (including those resistant to benzimidazoles) Pinworms, Ascarids, Hairworms, and Large-mouth Stomach Worms.Bots (Gasterophilus spp.-oral andgastric stages). Lungworms (Dictyocaulus arnfieldi)Intestinal Threadworms (Strongyloi-des westeri). Summer Sores and Dermatitis causedby Onchocerca sp.",
-		"directions": "SHAKE WELL BEFORE USE Dosage Rate: 91 mcg ivermectin per Ib (200 mcg/kg) of body weight. ADMINISTRATION * Weigh the Horse: Determine the weight of the horse as accurately as possible to ensure the correct dose. *Calculate Dose: Administer 1 mL per 200 lbs (90 kg) of body weight. *Measure: Measure the required amount using a standard measuring cup or oral dosing tool. *Administer: Pour the dose over the horse's feed and mix well or adminiser directly onto the back of the horse's tongue.",
-		"warnings": "Horses Only: This product has been formulated specifically for use in horses only. Refrain from smoking and eating when handling. Wash hands after use. Avoid contact with eyes. Swelling and itching reactions may occur in horses carrying heavy infections of neck thread worm microfilariae (Onchocerca sp.).",
-		"doNotUse": "",
-		"askDoctor": "Consult your veterinarian for assistance in the diagnosis, treatment, and control of parasitism. Provides effective treatment and control of the following parasites in horses:",
-		"askDoctorOrPharmacist": "",
-		"whenUsing": "",
-		"stopUse": "",
-		"pregnancy": "",
-		"keepOutOfReach": "Keep out reach of children",
-		"storage": "",
-		"activeIngredient": "lvermectin",
-		"inactiveIngredient": "Glycerin",
-		"routes": [
-			"Topical",
-			"Oral"
-		],
-		"symptoms": [
-			"gas-bloating",
-			"dandruff",
-			"earache"
-		],
-		"minAgeYears": 0.5,
-		"drowsy": null,
-		"labelCount": 15,
-		"manufacturer": "Shenzhen Zhenshangzekai Technology Co, Ltd.",
-		"ndc": "87276-260",
-		"splSetId": "4629a0e0-5cc4-3d72-e063-6294a90ae00d",
-		"effectiveTime": "20260320"
-	},
-	{
 		"slug": "lotion",
 		"genericName": "Lotion",
 		"brandNames": [
@@ -10164,6 +10112,49 @@
 		"ndc": "71205-747",
 		"splSetId": "b4694451-a13d-484e-92c4-c03a6fcbb511",
 		"effectiveTime": "20230101"
+	},
+	{
+		"slug": "ivermectin",
+		"genericName": "Ivermectin",
+		"brandNames": [
+			"Sklice",
+			"Rid One And Done",
+			"Lice Treatment Dedicated",
+			"Ivermectin",
+			"Ivometn Ivermectin Lice Treatment",
+			"Synthabio Ivermectin",
+			"Head Lice Treatment Ivermectin Lotion118ml"
+		],
+		"sourceNames": [
+			"IVERMECTIN"
+		],
+		"purpose": "lice treatment lice treatment",
+		"uses": "Important: Read warnings before use .Children 6 months of age to under 12 years of age : an adult should supervise use Adults and children 6 months of age and over: Inspect All houschold members should be checked by anothe!person for lice and/or nits (eggs) Use a magnifying glassin bright light to help you see thelice and/or nits(eggs) Use a tool, such as a comb or two unsharpened pencilsto lift and part the hair Look for tiny nits near the scalp, beginning at the backof theneck and behind the ears Examine small sections ofthe hair (1-2 inches wide) ata time .Unlike dandruff, nits stick to the hair, Dandruff shouldmove when lightly touched If either lice or nits (eggs) are found, treat with product Treat Your hair and scalp must be DRY before applyingproduct Apply the product directly onto dry hair and scalp Completely cover your scalp and hair closest to thescalp first.and then apply outwards towards the endsofyour hair Use only as much asneeded to fully cover hair andscalp up to one full bottle, and discard the remainingRub product throughout your hair Itis important to completely cover your entire head sothat all lice and eggs are exposed to the lotion, Be surethat each hair is coated from the scalp to the tip Wait and Rinse Allow product to stay on your hair and scalp for 10minutes after it has been applied, Use a timer or clockStart timing after you have completely covered yourhair and scalp with product. After 10 minutes, rinse product completely from youhair and scalp using only water. After rinsing, dry and style hair as usual. Wait 24 hoursbefore applying shampoo. After treatment Wash your hands after applying product. -Nit combing is not necessary whentreating with product for it to work, but ifdesired, a fne-tooth comb or special nitcomb may be used to remove dead liceand nits.This is a single use product, Discard bottle after use.Do not use again on the same personand same lice infestation without talkingto a healthcare provider frst.If infestation continues, see a doctor forother treatments. Machine wash any bedding and clothingused by anyone having lice, Machinewash at high temperatures (150°F) andtumble in a hot dryer for 20 minutes.After fnishing treatment with licemedicine, check everyone in your famillyfor lice after one week. Considertreatment for those who have lice.",
+		"directions": "lotion, topical",
+		"warnings": "TAMPER EVIDENT: DO NOT USE IF THEPUMP IS DAMAGED OR SEAL IS BROKEN. Store at room temperature 68℃F-77° Do not freeze. keep carton and see Consumer Information Leaflet and warnings before use",
+		"doNotUse": "-Breathing difficulty occurs -Eye irritation occurs -Skin or scalp irritation continues or infection occurs -Rash develops",
+		"askDoctor": "before use if you Have any skin conditions or sensitivities. - Are pregnant or plan to become pregnant. It is not known if product can harm your unborn baby. Are currently or planning to breast feed! Avoid getting product on your breast to help prevent contact by your baby.",
+		"askDoctorOrPharmacist": "",
+		"whenUsing": "",
+		"stopUse": "",
+		"pregnancy": ", ask a health professional before use.",
+		"keepOutOfReach": "If swallowed, get medical help or contact Poison Control Center(1-800-222-1222)right away.",
+		"storage": "",
+		"activeIngredient": "ivermectin",
+		"inactiveIngredient": "Butylated hydroxyanisole, castor oil, cetylalcohol, citric acid anhydrous, crodalan AWS,cyclomethicone, glycerin, imidurea, lanolinalcohols, methylparaben, oleyl alcohol, oliveoil, propylene glycol, propylparaben, purifedwater, shea butter, sodium citrate anhydroussorbitan tristearate and stearyl alcohol.",
+		"routes": [
+			"Topical"
+		],
+		"symptoms": [
+			"dandruff"
+		],
+		"minAgeYears": 0.5,
+		"drowsy": null,
+		"labelCount": 14,
+		"manufacturer": "Shenzhen Zhenshangzekai Technology Co., Ltd.",
+		"ndc": "87276-000",
+		"splSetId": "459879fb-efd1-9fc1-e063-6394a90a98b0",
+		"effectiveTime": "20251210"
 	},
 	{
 		"slug": "silver-nitrate",
